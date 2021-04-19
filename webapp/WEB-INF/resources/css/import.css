@@ -1,0 +1,26 @@
+@charset 'euc-kr';
+
+/* 레이아웃 및 공통 템플릿 */
+@import url("base.css");
+@import url("layout.css");
+/* @import url("input.css");  input */
+@import url("board.css"); /* tableArae & table */
+@import url("template.css"); 
+
+/* 로그인&회원가입&마이페이지 */
+@import url("member.css");
+@import url("member2.css");
+@import url("mypage.css");
+
+/* 컨텐츠 영역 CSS */
+@import url("main.css"); /* //메인 */
+@import url("apartment.css"); /* //단지정보 */
+@import url("gallery.css"); /* //갤러리 */
+@import url("times.css"); /* //레미안타임즈 */
+@import url("brand.css"); /* //브랜드 */
+@import url("brand2.css"); /* //래미안상품 */
+@import url("sale_guide.css"); /* //분양안내 */
+@import url("sale_template.css"); /* //분양템플릿 */
+@import url("service.css"); /* //계약*입주서비스 */
+@import url("cscenter.css"); /* //고객센터 */
+@import url("etc.css"); /* //ETC */

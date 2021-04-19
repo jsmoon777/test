@@ -1,0 +1,140 @@
+@charset 'euc-kr';
+
+/* 회원 폼 공통 추가 */
+.members .inner.login_info p.member_ment {
+	margin-top: 20px;
+	font-size: 15px;
+	color: #444444;
+	font-weight: 300;
+	line-height: 25px;
+	background: url(../images/member/notic01.png) 0 2px no-repeat;
+	padding-left: 30px;
+}
+
+/* 아이디&비밀번호 찾기 */
+.members .inner.login_info.find_id_pw {
+	width: 1044px;
+	padding: 0px 0px 30px;
+}
+.members .inner.login_info.find_id_pw .times_tb {
+	padding: 24px 102px 0px;
+	box-sizing: border-box;
+}
+.members .inner.login_info.find_id_pw .times_tb h2 > span {
+	right: 102px
+}
+.members .inner.login_info.find_id_pw .basicL td {
+	padding-right: 0px;
+}
+.members .inner.login_info.find_id_pw .basicL td a.btn_gray {
+	height: 20px;
+	line-height: 21px;
+	vertical-align: middle;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type ul.mct_select {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type ul.mct_select li {
+	float: left;
+	margin-right: 8px;
+	width: 230px;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type ul.mct_select li label {
+	position: relative;
+	display: block;
+	width: 228px;
+	padding: 12px 0px 13px;
+	border: 2px solid #C7C7C7;
+	box-sizing: border-box;
+	border-radius: 100px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type ul.mct_select li label.active {
+	color: #1B9C9E;
+	border-color: #1EBEC0;
+	background: url(../images/member/ico_confirm_type.png) no-repeat 20px 12px;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type ul.mct_select li label input[type="radio"] {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type fieldset.mct_form {
+	display: none;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type fieldset.mct_form p.field {
+	line-height: 1;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type fieldset.mct_form p.field a.btn_confirm {
+	width: 128px;
+	padding: 13px 0px;
+	vertical-align: middle;
+}
+.members .inner.login_info.find_id_pw .basicL td.member_confirm_type fieldset.mct_form p.guide {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 25px;
+}
+
+/* 아이디&비밀번호 찾기 결과 */
+.members .inner.login_info.find_id_pw .find_result {
+	text-align: center;
+	padding-top: 80px;
+	border-top: 4px solid #101010;
+}
+.members .inner.login_info.find_id_pw .find_result h2 {
+	color: #1B9C9E;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+.members .inner.login_info.find_id_pw .find_result .ico_id {
+	margin: 23px 0px 39px;
+}
+.members .inner.login_info.find_id_pw .find_result .ico_pw {
+	margin: 40px 0px 30px;
+}
+.members .inner.login_info.find_id_pw .find_result p.member_id_info {
+	padding-bottom: 10px;
+	font-size: 28px;
+	line-height: 44px;
+}
+.members .inner.login_info.find_id_pw .find_result p.member_id_info strong {
+	color: #1B9C9E;
+	font-weight: bold;
+	border-bottom: 2px solid #1B9C9E;
+}
+.members .inner.login_info.find_id_pw .find_result table.new_pw_setting {
+	width: 612px;
+	margin: 0px auto;
+}
+.members .inner.login_info.find_id_pw .find_result table.new_pw_setting tbody th[scope="row"],
+.members .inner.login_info.find_id_pw .find_result table.new_pw_setting tbody td {
+	text-align: left;
+	padding: 20px 0px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.members .inner.login_info.find_id_pw .find_result table.new_pw_setting tbody td input[type="password"] {
+	width: 100%;
+}
+.members .inner.login_info.find_id_pw .btn_find_pw {
+	text-align: center;
+	padding: 30px 0px 15px;
+}
+.members .inner.login_info.find_id_pw .btn_find_pw a {
+	display: inline-block;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.members .inner.login_info.find_id_pw .btn_find_pw a img.ico {
+	position: relative;
+	top: -2px;
+	margin-left: 8px;
+}

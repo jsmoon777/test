@@ -1,0 +1,898 @@
+@charset 'euc-kr';
+
+/* 래미안 상품 소개 */
+.raemian_product_intro {
+	width: 1440px;
+	margin: 0px auto;
+	padding-bottom: 100px;
+}
+.raemian_product_intro h2 {
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 386px;
+	background: url(../images/brand/product/banner_raemian_style.png) no-repeat center top;
+}
+.raemian_product_intro p {
+	padding-top: 80px;
+	margin: -76px 80px 0px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 45px;
+	background-color: white;
+}
+.raemian_product_intro p strong,
+.raemian_product_intro p strong b {
+	position: relative;
+	font-weight: bold;
+}
+.raemian_product_intro p strong b:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 50%;
+	width: 4px;
+	height: 4px;
+	margin-left: -3px;
+	background-color: #1B9C9E;
+	border-radius: 2px;
+}
+
+/* 래미안 상품 특장점 */
+.raemian_product_feature nav.rpf_tab ul {
+	overflow: hidden;
+	width: 1440px;
+	margin: 0px auto -28px;
+	padding-bottom: 28px;
+}
+.raemian_product_feature nav.rpf_tab ul li {
+	float: left;
+	width: 478px;
+	margin-left: 3px;
+}
+.raemian_product_feature nav.rpf_tab ul li:first-child {
+	margin-left: 0px;
+}
+.raemian_product_feature nav.rpf_tab ul li a {
+	display: block;
+	position: relative;
+	padding: 25px 0px;
+	line-height: 1;
+	color: #A8A8A8;
+	text-align: center;
+	border-radius: 5px 5px 0px 0px;
+	background-color: #D6D6D6;
+}
+.raemian_product_feature nav.rpf_tab ul li a.active {
+	color: white;
+}
+.raemian_product_feature nav.rpf_tab ul li.rae a.active {
+	background-color: #1B9C9E;
+}
+.raemian_product_feature nav.rpf_tab ul li.mi a.active {
+	background-color: #907E72;
+}
+.raemian_product_feature nav.rpf_tab ul li.an a.active {
+	background-color: #717173;
+}
+.raemian_product_feature nav.rpf_tab ul li a.active:after {
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	content: '';
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-width: 14px;
+	border-style: solid;
+}
+.raemian_product_feature nav.rpf_tab ul li.rae a.active:after {
+	border-color: #1B9C9E transparent transparent transparent;
+}
+.raemian_product_feature nav.rpf_tab ul li.mi a.active:after {
+	border-color: #907E72 transparent transparent transparent;
+}
+.raemian_product_feature nav.rpf_tab ul li.an a.active:after {
+	border-color: #717173 transparent transparent transparent;
+}
+.raemian_product_feature nav.rpf_tab ul li a span.ico {
+	display: inline-block;
+	vertical-align: middle;
+	width: 58px;
+	height: 60px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-right: 30px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.raemian_product_feature nav.rpf_tab ul li.rae a span.ico {
+	background-image: url(../images/brand/product/rpf_tab_rae.png);
+}
+.raemian_product_feature nav.rpf_tab ul li.mi a span.ico {
+	background-image: url(../images/brand/product/rpf_tab_mi.png);
+}
+.raemian_product_feature nav.rpf_tab ul li.an a span.ico {
+	background-image: url(../images/brand/product/rpf_tab_an.png);
+}
+.raemian_product_feature nav.rpf_tab ul li a.active span.ico {
+	background-position: center bottom;
+}
+.raemian_product_feature nav.rpf_tab ul li a span.txt {
+	position: relative;
+	top: 1px;
+	font-size: 22px;
+	line-height: 25px;
+	font-family: 'HK Nova';
+	font-weight: 500;
+	vertical-align: middle;
+}
+.raemian_product_feature .rpf_content {
+	text-align: center;
+	padding: 83px 0px 150px;
+	background-color: #F2F2F2;
+}
+.raemian_product_feature .rpf_content .feature_header {
+	position: relative;
+	height: 183px;
+	padding: 40px 115px 0px;
+	margin-bottom: 100px;
+	box-sizing: border-box;
+}
+.raemian_product_feature .rpf_content .feature_header:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+.raemian_product_feature .rpf_content .feature_header.rae:after {
+	margin-left: 314px;
+	width: 171px;
+	height: 183px;
+	background-image: url(../images/brand/product/rpf_cont_rae.png);
+}
+.raemian_product_feature .rpf_content .feature_header.mi:after {
+	margin-left: 320px;
+	width: 171px;
+	height: 182px;
+	background-image: url(../images/brand/product/rpf_cont_mi.png);
+}
+.raemian_product_feature .rpf_content .feature_header.an:after {
+	margin-left: 318px;
+	width: 176px;
+	height: 182px;
+	background-image: url(../images/brand/product/rpf_cont_an.png);
+}
+.raemian_product_feature .rpf_content .feature_header h2 {
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 67px;
+	margin-bottom: 24px;
+}
+.raemian_product_feature .rpf_content .feature_header.rae h2 {
+	color: #1B9C9E;
+}
+.raemian_product_feature .rpf_content .feature_header.mi h2 {
+	color: #907E72;
+}
+.raemian_product_feature .rpf_content .feature_header.an h2 {
+	color: #717173;
+}
+.raemian_product_feature .rpf_content .feature_header p.more_advanced_life {
+	font-family: 'HK Nova';
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 32px;
+}
+.raemian_product_feature .rpf_content .feature_list {
+	position: relative;
+	margin: 120px auto 0px;
+	width: 1440px;
+}
+.raemian_product_feature .rpf_content .feature_header + .feature_list {
+	margin-top: 100px;
+}
+.raemian_product_feature .rpf_content .feature_list h3 {
+	font-size: 40px;
+	line-height: 55px;
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col2 {
+	width: 1200px;
+	margin: 0px 120px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col3 {
+	width: 1440px;
+}
+.raemian_product_feature .rpf_content .feature_list ul:after {
+	content: '';
+	clear: left;
+	display: block;
+	height: 2px;
+	margin-top: -2px;
+}
+.raemian_product_feature .rpf_content .feature_list ul li {
+	float: left;
+	position: relative;
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.15);
+	background-color: white;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col2 li {
+	width: 580px;
+	margin-left: 40px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col3 li {
+	width: 460px;
+	margin-left: 30px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col2 li:first-child,
+.raemian_product_feature .rpf_content .feature_list ul.col3 li:first-child {
+	margin-left: 0px;
+}
+.raemian_product_feature .rpf_content .feature_list ul li .photo,
+.raemian_product_feature .rpf_content .feature_list ul li .photo img {
+	height: 310px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col2 li .photo img {
+	width: 580px;
+}
+.raemian_product_feature .rpf_content .feature_list ul.col3 li .photo img {
+	width: 460px;
+}
+.raemian_product_feature .rpf_content .feature_list ul li p.summary {
+	position: absolute;
+	top: 274px;
+	right: 0px;
+	padding: 8px 40px;
+	font-size: 25px;
+	font-weight: 500;
+	color: white;
+	line-height: 55px;
+}
+.raemian_product_feature .rpf_content .feature_list.rae ul li p.summary {
+	background-color: #1B9C9E;
+}
+.raemian_product_feature .rpf_content .feature_list.mi ul li p.summary {
+	background-color: #907E72;
+}
+.raemian_product_feature .rpf_content .feature_list.an ul li p.summary {
+	background-color: #717173;
+}
+.raemian_product_feature .rpf_content .feature_list ul li p.detail {
+	box-sizing: border-box;
+	height: 208px;
+	padding: 73px 45px 45px;
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+	background-color: white;
+}
+.raemian_product_feature .rpf_content .feature_list p.note {
+	text-align: left;
+	margin-top: 50px;
+	color: #888888;
+	font-size: 15px;
+	line-height: 22px;
+	padding-left: 30px;
+	background: url(../images/brand/product/ico_rpf_note.png) no-repeat left 1px;
+}
+.raemian_product_feature .rpf_content .feature_list p.note.col2 {
+	margin-left: 120px;
+}
+.raemian_product_feature .rpf_content .feature_list button.btn_more {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border: 2px solid #1B9C9E;
+	box-sizing: border-box;
+	border-radius: 100px;
+	padding: 13px 25px;
+	font-size: 16px;
+	line-height: 24px;
+}
+.raemian_product_feature .rpf_content .feature_list button.btn_more:before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	width: 14px;
+	height: 14px;
+	margin-right: 10px;
+	background: url(../images/brand/product/ico_rpf_more.png) no-repeat left top;
+}
+.raemian_product_feature .rpf_content .feature_list button.btn_more.video:before {
+	width: 13px;
+	height: 14px;
+	background-image: url(../images/brand/product/ico_rpf_video.png);
+}
+.raemian_product_feature .rpf_content .feature_list button.btn_more:hover,
+.raemian_product_feature .rpf_content .feature_list button.btn_more:focus {
+	color: white;
+	background-color: #1B9C9E
+}
+.raemian_product_feature .rpf_content .feature_list button.btn_more:hover:before,
+.raemian_product_feature .rpf_content .feature_list button.btn_more:focus:before {
+	background-position: left bottom;
+}
+
+/* 래미안 조경의 진화 */
+.raemian_landscape_evolution {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	padding-top: 463px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #333333;
+}
+.raemian_landscape_evolution:after {
+	content: '';
+	display: block;
+	height: 160px;
+}
+.raemian_landscape_evolution h3 {
+	position: absolute;
+	top: 130px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 50px;
+}
+.raemian_landscape_evolution nav.rle_tab {
+	position: absolute;
+	z-index: 10;
+	top: 236px;
+	left: 50%;
+	width: 1440px;
+	padding: 24px 0px 43px;
+	background: linear-gradient(0deg, rgba(51, 51, 51, 0) 0%, #333333 28%);
+	transform: translate(-50%,0%);
+}
+.raemian_landscape_evolution nav.rle_tab ul {
+	position: relative;
+	overflow: hidden;
+}
+.raemian_landscape_evolution nav.rle_tab ul:after {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 2;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 1px;
+	background-color: #C7C7C7;
+}
+.raemian_landscape_evolution nav.rle_tab ul li {
+	float: left;
+	width: 25%;
+}
+.raemian_landscape_evolution nav.rle_tab ul li a {
+	position: relative;
+	z-index: 1;
+	display: block;
+	padding-bottom: 21px;
+	border-bottom: 4px solid transparent;
+	color: #A8A8A8;
+	text-align: center;
+	transition: 0.25s ease color, 0.25s ease border-bottom-color;
+}
+.raemian_landscape_evolution nav.rle_tab ul li a.active {
+	z-index: 3;
+	color: white;
+	border-bottom-color: #1EBEC0;
+}
+.raemian_landscape_evolution nav.rle_tab ul li a span.term {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+}
+.raemian_landscape_evolution nav.rle_tab ul li a strong.subject {
+	display: block;
+	font-size: 20px;
+	line-height: 30px;
+}
+.raemian_landscape_evolution section.rle_content {
+	width: 1196px;
+	margin: 0px auto;
+}
+.raemian_landscape_evolution section.rle_content h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.raemian_landscape_evolution section.rle_content h4 span.term {
+	display: inline-block;
+	padding: 24px 59px;
+	border: 1px solid #1EBEC0;
+	border-radius: 100px;
+	margin-bottom: 40px;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 25px;
+	color: #90E9E7;
+}
+.raemian_landscape_evolution section.rle_content h4 strong.subject {
+	display: block;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 89px;
+	color: #1EBEC0;
+}
+.raemian_landscape_evolution section.rle_content p.summary_desc {
+	margin-bottom: 40px;
+	font-size: 22px;
+	font-weight: 500;
+	line-height: 33px;
+	text-align: center;
+	color: #1EBEC0;
+}
+.raemian_landscape_evolution section.rle_content h5 {
+	margin-bottom: 80px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 27px;
+	text-align: center;
+	color: #C7C7C7;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info {
+	margin: 80px 0px 168px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info.rle2014-2015_part2 {
+	width: 952px;
+	margin-left: 244px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info .photo img {
+	width: 100%;
+	height: auto;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption {
+	display: block;
+	position: relative;
+	min-height: 103px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name {
+	position: absolute;
+	z-index: 2;
+	bottom: 0px;
+	right: -80px;
+	padding: 60px 70px 63px 75px;
+	color: white;
+	background-color: #1B9C9E;
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption.reverse p.name {
+	right: auto;
+	left: -80px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info.rle2014-2015_part2 figcaption.reverse p.name {
+	left: -244px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name span.expression,
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name strong {
+	display: block;
+	color: white;
+	font-weight: bold;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name span.expression {
+	margin-bottom: 20px;
+	font-size: 28px;
+	line-height: 45px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name strong {
+	position: relative;
+	font-size: 45px;
+	line-height: 67px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name strong:before {
+	position: absolute;
+	top: 34px;
+	left: -139px;
+	content: '';
+	display: block;
+	width: 105px;
+	height: 3px;
+	background-color: #90E9E7;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption.reverse p.name strong:before {
+	left: auto;
+	right: -139px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.prologue {
+	padding: 60px 0px 0px 60px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 35px;
+	color: white;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption.reverse p.prologue {
+	padding-left: 708px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info {
+	padding: 60px 0px 0px 60px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption.reverse ul.info {
+	padding-left: 708px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info.rle2014-2015_part2 figcaption.reverse ul.info {
+	padding-left: 464px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li {
+	position: relative;
+	z-index: 1;
+	margin-top: 10px;
+	padding-left: 59px;
+	font-size: 18px;
+	line-height: 30px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li strong.category {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #90E9E7;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li span.value {
+	color: white;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li span.value:first-child {
+	margin-left: -59px;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li span.value strong {
+	font-weight: bold;
+}
+.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption ul.info li:first-child {
+	margin-top: 0px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro {
+	position: relative;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part1 {
+	height: 1308px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part2 {
+	height: 700px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part3 {
+	height: 550px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 {
+	height: 2486px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 {
+	height: 1528px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 {
+	height: 2201px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 {
+	height: 1783px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 {
+	height: 1935px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro .pi_cont {
+	position: absolute;
+	margin-top: 50px;
+	opacity: 0;
+	transition: 0.3s ease all;
+}
+.raemian_landscape_evolution section.rle_content .product_intro .pi_cont.view {
+	margin-top: 0px;
+	opacity: 1;
+}
+.raemian_landscape_evolution section.rle_content .product_intro .pi_cont .photo,
+.raemian_landscape_evolution section.rle_content .product_intro .pi_cont p {
+	display: inline-block;
+	vertical-align: middle;
+}
+.raemian_landscape_evolution section.rle_content .product_intro .pi_cont p {
+	margin: 40px 0px;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 30px;
+	color: #A8A8A8;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part1 .pi_cont:nth-child(1) {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part1 .pi_cont:nth-child(1) .photo {
+	margin-right: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part1 .pi_cont:nth-child(2) {
+	top: 630px;
+	right: 98px;
+	width: 610px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part2 .pi_cont:nth-child(1) {
+	top: 0px;
+	right: 98px;
+	width: 732px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2018_part3 .pi_cont:nth-child(1) {
+	top: 0px;
+	right: 220px;
+	width: 660px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(1) {
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(1) p {
+	margin-left: 42px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(2) {
+	top: 665px;
+	right: 98px;
+	width: 488px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(3) {
+	top: 944px;
+	left: 0px;
+	width: 366px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(4) {
+	top: 1384px;
+	right: 220px;
+	width: 488px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(5) {
+	top: 1986px;
+	right: 0px;
+	width: 1074px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2016-2017 .pi_cont:nth-child(5) p {
+	margin-left: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 .pi_cont:nth-child(1) {
+	top: 0px;
+	right: 0px;
+	width: 1066px;
+	text-align: right;
+	white-space: nowrap;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 .pi_cont:nth-child(1) p {
+	position: relative;
+	top: -100px;
+	margin-right: 54px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 .pi_cont:nth-child(2) {
+	top: 357px;
+	left: 0px;
+	width: 488px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 .pi_cont:nth-child(3) {
+	top: 933px;
+	left: 122px;
+	width: 926px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part1 .pi_cont:nth-child(3) p {
+	margin-left: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 .pi_cont:nth-child(1) {
+	top: 0px;
+	left: 0px;
+	width: 732px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 .pi_cont:nth-child(2) {
+	top: 300px;
+	right: 0px;
+	width: 386px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 .pi_cont:nth-child(3) {
+	top: 897px;
+	left: 0px;
+	width: 404px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 .pi_cont:nth-child(4) {
+	top: 897px;
+	right: 0px;
+	width: 733px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2014-2015_part2 .pi_cont:nth-child(5) {
+	top: 1621px;
+	right: 98px;
+	width: 830px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(1) {
+	top: 0px;
+	right: 0px;
+	width: 950px;
+	text-align: right;
+	white-space: nowrap;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(1) p {
+	position: relative;
+	top: -100px;
+	margin-right: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(2) {
+	top: 381px;
+	left: 0px;
+	width: 488px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(3) {
+	top: 937px;
+	right: 0px;
+	width: 534px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(3) p {
+	padding-left: 176px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part1 .pi_cont:nth-child(4) {
+	top: 1172px;
+	left: 220px;
+	width: 342px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(1) {
+	top: 0px;
+	right: 0px;
+	width: 586px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(2) {
+	top: 205px;
+	left: 0px;
+	width: 488px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(3) {
+	top: 746px;
+	right: 0px;
+	width: 778px;
+	white-space: nowrap;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(3) p {
+	margin-left: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(4) {
+	top: 1350px;
+	right: 0px;
+	width: 1072px;
+	white-space: nowrap;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(4) p {
+	position: relative;
+	top: -100px;
+	margin-left: 60px;
+}
+.raemian_landscape_evolution section.rle_content .product_intro.rle2010_part2 .pi_cont:nth-child(5) {
+	top: 1350px;
+	right: 154px;
+	width: 270px;
+	padding-top: 316px;
+}
+.raemian_landscape_evolution section.rle_content .btn_term_move {
+	text-align: center;
+	margin-top: 120px;
+}
+.raemian_landscape_evolution section.rle_content .btn_term_move button {
+	width: 338px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 25px;
+	padding: 23px 0px;
+	color: white;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 100px;
+}
+.raemian_landscape_evolution section.rle_content .btn_term_move button:after {
+	position: relative;
+	top: -1px;
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 13px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.raemian_landscape_evolution > button.btn_close {
+	position: fixed;
+	z-index: 9;
+	top: 40px;
+	right: 50px;
+	width: 28px;
+	height: 28px;
+}
+.raemian_landscape_evolution > button.btn_close img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 28px;
+	height: 28px;
+}
+
+
+/* 해상도 1440 이하 일 때 */
+@media all and (max-width: 1440px) {
+	/* 래미안 상품 소개 */
+	.raemian_product_intro {
+		width: 1200px;
+	}
+	.raemian_product_intro p {
+		padding-top: 60px;
+	}
+	
+	/* 래미안 상품 특장점 */
+	.raemian_product_feature nav.rpf_tab ul {
+		width: 1200px;
+	}
+	.raemian_product_feature nav.rpf_tab ul li {
+		float: left;
+		width: 398px;
+	}
+	.raemian_product_feature .rpf_content .feature_list {
+		width: 1200px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul.col2 {
+		margin: 0px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul.col3 {
+		width: 1200px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul:after {
+		content: '';
+		clear: left;
+		display: block;
+		height: 2px;
+		margin-top: -2px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul li {
+		float: left;
+		position: relative;
+		box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.15);
+		background-color: white;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul.col3 li {
+		width: 390px;
+		margin-left: 15px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul li .photo,
+	.raemian_product_feature .rpf_content .feature_list ul li .photo img {
+		height: 263px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul.col3 li .photo img {
+		width: 390px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul li p.summary {
+		padding: 4px 30px;
+		top: 230px;
+	}
+	.raemian_product_feature .rpf_content .feature_list ul li p.detail {
+		height: 184px;
+		padding: 58px 20px 35px;
+	}
+	.raemian_product_feature .rpf_content .feature_list p.note {
+		margin-top: 40px;
+	}
+	.raemian_product_feature .rpf_content .feature_list p.note.col2 {
+		margin-left: 0px;
+	}
+
+	
+	/* 래미안 조경의 진화 */
+	.raemian_landscape_evolution nav.rle_tab {
+		width: 1250px;
+	}
+	.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption p.name {
+		right: 0px;
+	}
+	.raemian_landscape_evolution section.rle_content figure.product_main_info figcaption.reverse p.name {
+		left: 0px;
+	}
+}

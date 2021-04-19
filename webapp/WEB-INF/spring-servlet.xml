@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.2.xsd">
+
+	<context:component-scan base-package="com.green.*"></context:component-scan>
+	<mvc:annotation-driven />
+	
+	<!-- css, js, img 사용 설정 -->
+	<mvc:resources location="/WEB-INF/resources/css/"  mapping="/css/**" />
+	<mvc:resources location="/WEB-INF/resources/js/"   mapping="/js/**" />
+	<mvc:resources location="/WEB-INF/resources/img/"  mapping="/img/**" />
+	
+
+    <bean id="viewResolver" 
+     class ="org.springframework.web.servlet.view.InternalResourceViewResolver">
+       <property name="prefix" value="/WEB-INF/views/" />
+       <property name="suffix" value=".jsp" />
+     </bean> 
+  
+     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+        <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+        <property name="username" value="ffee"/>
+        <property name="password" value="1234"/>
+    </bean>
+   
+   <!-- mybatis 와 스프링 연결을 위한 SqlSessionFactory 객체 사용
+      DB 연결 및 sql 명령 실행을 담당    --> 
+    <bean id="sqlSessionFactory" 
+          class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource"     ref="dataSource" />  
+        <property name="mapperLocations" 
+            value="classpath:myBatis/sqlmaps/*.xml" />  
+    </bean>
+    
+    <!-- SqlSessionTemplate 설정   -->
+    <bean id="sqlSession"
+          class="org.mybatis.spring.SqlSessionTemplate"
+          destroy-method="clearCache">
+          <constructor-arg 
+             name="sqlSessionFactory"
+             ref="sqlSessionFactory"></constructor-arg>
+    </bean>
+    
+    <!-- Interceptor 설정 추가 -->
+    <bean id="loginInterceptor" 
+            class="com.green.interceptor.LoginInterceptor"/>
+	<bean id="authInterceptor" 
+            class="com.green.interceptor.AuthInterceptor"/>
+    
+	<mvc:interceptors>
+	
+		<mvc:interceptor>
+			<mvc:mapping path="/user/loginPost"/> <!-- 파일위치가 아닌 컨트롤러를 막아야된다 -->
+			<ref bean="loginInterceptor"/>
+		</mvc:interceptor>
+	
+		<mvc:interceptor>
+			<mvc:mapping path="/**"/>
+			<mvc:exclude-mapping path="/resources/**"/> <!-- /* root폴더 전부 --> <!-- /** root폴더 하위폴더까지 전부 --> <!-- 이거 아마 안됨 -->
+			<mvc:exclude-mapping path="/register"/> <!-- ajax랑 충돌방지 -->
+			<mvc:exclude-mapping path="/loginForm"/> <!-- 다른 인터셉터가 처리 -->
+			<mvc:exclude-mapping path="/loginPost"/>
+			<ref bean="authInterceptor"/>
+		</mvc:interceptor>
+	</mvc:interceptors>
+	
+	<!-- 관리자 권한 -->
+	<mvc:annotation-driven>
+         <!-- argument resolver -->
+         <mvc:argument-resolvers>
+                  <bean class="com.green.interceptor.AuthUserHandlerMethodArgumentResolver" />
+         </mvc:argument-resolvers>
+	</mvc:annotation-driven>
+
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

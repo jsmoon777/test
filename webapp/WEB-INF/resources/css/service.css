@@ -1,0 +1,2641 @@
+@charset 'euc-kr';
+
+/* 계약입주서비스 공통
+**************************************************************/
+/* 계약 입주 컨텐츠 */
+.service_wrap {
+	padding-bottom: 70px;
+	background-color: #F2F2F2;
+}
+.service_content {
+	width: 1440px;
+	padding: 80px 0px;
+	margin: 0px auto;
+}
+p.intro_guide + .service_content {
+	padding-top: 0px;
+	margin-top: 60px;
+}
+
+/* 분양대금조회
+**************************************************************/
+/* 분양대금납부 서비스 이용 안내 */
+.service_content .regist_after_service {
+	position: relative;
+	padding: 53px 55px 50px;
+	border: 5px solid #ECECEC;
+}
+.service_content .regist_after_service h2 {
+	padding-bottom: 27px;
+	margin-bottom: 30px;
+	font-size: 22px;
+	line-height: 35px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.service_content .regist_after_service h2 strong {
+	font-weight: bold;
+}
+.service_content .regist_after_service ul {
+	line-height: 35px;
+	color: #444444;
+}
+.service_content .regist_after_service ul > li {
+	padding-left: 14px;
+	background: url(../images/template/bullet_desc.png) no-repeat left 15px;
+}
+.service_content .regist_after_service ul > li > a {
+	font-weight: bold;
+	color: #5262AD;
+}
+.service_content .regist_after_service ul > li > a:hover,
+.service_content .regist_after_service ul > li > a:focus {
+	border-bottom: 1px solid #5262AD;
+}
+.service_content .regist_after_service a.btn_regist {
+	position: absolute;
+	top: 45px;
+	right: 55px;
+	display: block;
+	width: 169px;
+	padding: 11px 0px;
+	border: 1px solid #1B9C9E;
+	border-radius: 100px;
+	text-align: center;
+	font-weight: 500;
+}
+.service_content .regist_after_service a.btn_regist:after {
+	content: '';
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-left: 8px;
+	background: url(../images/service/bullet_regist.png) no-repeat left top;
+}
+.service_content .contract_product_payment {
+	position: relative;
+}
+.service_content .contract_product_payment h2 {
+	margin-bottom: 24px;
+	font-size: 28px;
+	line-height: 41px;
+}
+.service_content .contract_product_payment h2 strong {
+	color: #006466;
+}
+.service_content .contract_product_payment p.desc {
+	position: absolute;
+	top: 15px;
+	right: 0px;
+	font-size: 15px;
+	line-height: 22px;
+	text-align: right;
+}
+.service_content .contract_product_payment .cpp_content {
+	position: relative;
+	min-height: 597px;
+	padding: 70px 80px;
+	background-color: white;
+}
+.service_content .contract_product_payment .cpp_content h3 {
+	position: relative;
+	font-size: 22px;
+	line-height: 33px;
+	padding: 0px 187px 18px 0px;
+	margin-bottom: 40px;
+	border-bottom: 4px solid #101010;
+}
+.service_content .contract_product_payment .cpp_content h3 a {
+	display: block;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product {
+	position: relative;
+	overflow: hidden;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product.disabled {
+	cursor: default;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product:after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 12px;
+	right: 0px;
+	background: url(../images/mypage/bullet_select_product.png) no-repeat left top;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product.disabled:after {
+	display: none;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product span.field {
+	display: inline-block;
+	vertical-align: top;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product span.field.product {
+	position: relative;
+	padding-left: 30px;
+}
+.service_content .contract_product_payment .cpp_content h3 a.select_product span.field.product:before {
+	position: absolute;
+	top: 4px;
+	left: 15px;
+	content: '';
+	display: block;
+	width: 1px;
+	height: 25px;
+	background-color: #101010;
+}
+.service_content .contract_product_payment .cpp_content h3 a.btn_removal {
+	position: absolute;
+	right: 0px;
+	bottom: 10px;
+	padding: 13px 30px;
+	line-height: 24px;
+	font-size: 16px;
+	color: white;
+	border-radius: 3px;
+	background-color: #444444;
+}
+.service_content .contract_product_payment .cpp_content .note {
+	position: relative;
+	padding-left: 30px;
+	font-size: 15px;
+	line-height: 1;
+	color: #444444;
+	min-height: 70px;
+}
+.service_content .contract_product_payment .cpp_content .note h5 {
+	margin-bottom: 5px;
+	font-size: 15px;
+	line-height: 25px;
+}
+.service_content .contract_product_payment .cpp_content .note img.ico {
+	position: absolute;
+	top: 3px;
+	left: 0px;
+}
+.service_content .contract_product_payment .cpp_content .note p {
+	line-height: 25px;
+	margin-bottom: 14px;
+}
+.service_content .contract_product_payment .cpp_content .note p:last-child {
+	margin-bottom: 0px;
+}
+.service_content .contract_product_payment .cpp_content .note p a {
+	color: #101010;
+	font-weight: 500;
+	margin-left: 4px;
+}
+.service_content .contract_product_payment .cpp_content .note p strong {
+	color: #1B9C9E;
+}
+.service_content .contract_product_payment .cpp_content .note p a:hover,
+.service_content .contract_product_payment .cpp_content .note p a:focus {
+	border-bottom: 1px solid #101010;
+}
+.service_content .contract_product_payment .cpp_content .note .btn_print {
+	position: absolute;
+	top: 20px;
+	right: 0px;
+	text-align: right;
+	line-height: 1;
+}
+.service_content .contract_product_payment .cpp_content .note .btn_print a {
+	display: inline-block;
+	padding: 12px 30px;
+	border: 1px solid #101010;
+	border-radius: 100px;
+	font-weight: 500;
+	line-height: 24px;
+}
+.service_content .contract_product_payment .cpp_content .note .btn_print a:before {
+	position: relative;
+	top: -2px;
+	content: '';
+	display: inline-block;
+	width: 20px;
+	height: 18px;
+	margin-right: 10px;
+	vertical-align: middle;
+	background: url(../images/service/ico_ph_print.png) no-repeat left top;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list {
+	display: none;
+	position: absolute;
+	top: 116px;
+	left: 80px;
+	z-index: 2;
+	width: 1113px;
+	border: 2px solid #101010;
+	padding: 11px 0px;
+	box-sizing: border-box;
+	box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li {
+	line-height: 0;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a {
+	display: block;
+	padding: 13px 28px 12px;
+	background-color: white;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a:hover,
+.service_content .contract_product_payment .cpp_content ul.product_list li a:focus {
+	background-color: #F2F2F2;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a strong {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 24px;
+	border-bottom: 1px solid transparent;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a strong.product {
+	position: relative;
+	padding-left: 21px;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a strong.product:after {
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	content: '';
+	display: block;
+	width: 1px;
+	height: 20px;
+	background-color: #C7C7C7;
+}
+.service_content .contract_product_payment .cpp_content ul.product_list li a.active strong {
+	border-bottom-color: #101010;
+}
+.service_content .contract_product_payment .cpp_content .none_contract {
+	text-align: center;
+	padding-top: 160px;
+}
+.service_content .contract_product_payment .cpp_content .none_contract .ico {
+	margin-bottom: 30px;
+}
+.service_content .contract_product_payment .cpp_content .none_contract p.txt {
+	color: #888888;
+	font-size: 18px;
+	line-height: 27px;
+}
+.service_content .contract_product_payment .cpp_content .product_info {
+	overflow: hidden;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #C7C7C7;
+	margin-bottom: 60px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .photo {
+	float: left;
+	width: 262px;
+	height: 200px;
+	margin-right: 60px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary {
+	float: left;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul {
+	padding: 7px 0px 41px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li {
+	overflow: hidden;
+	margin-top: 15px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li:first-child {
+	margin-top: 0px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li strong.category,
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li span.value {
+	float: left;
+	display: block;
+	font-size: 17px;
+	line-height: 25px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li strong.category {
+	width: 87px;
+}
+.service_content .contract_product_payment .cpp_content .product_info .summary ul li span.value {
+	color: #444444;
+}
+.service_content .contract_product_payment .cpp_content .product_info .btn_detail a {
+	display: inline-block;
+	vertical-align: top;
+	font-weight: 500;
+	line-height: 24px;
+	padding: 13px 30px;
+	border-radius: 100px;
+	color: white;
+	background-color: #1B9C9E;
+}
+.service_content .contract_product_payment .cpp_content .product_info .btn_detail a:after {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 12px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.service_content .contract_product_payment .cpp_content .payment_current {
+	/* margin-bottom: 55px;  */
+}
+h4.paymentTit {
+	font-size: 25px;
+	line-height: 36px;
+	padding-bottom: 20px;
+}
+h4.paymentTit strong {
+	color: #006466;
+}
+
+
+/*200701 추가*/
+nav.tab_Paynavi {	text-align: center;	line-height: 1;	margin-bottom: 50px;}
+nav.tab_Paynavi ul { position: relative; display: block; overflow: hidden; }
+
+nav.tab_Paynavi ul li {	float: left; width: 640px; margin-left: -20px; }
+nav.tab_Paynavi ul.col2 li { width: 640px;}
+nav.tab_Paynavi ul li:first-child {	margin-left: 0px;}
+nav.tab_Paynavi ul li a {	position: relative;	z-index: 2;	display: block;	padding: 14px 0px;	text-align: center;	font-weight: bold; border-bottom:4px solid #C7C7C7;	font-size: 18px;	line-height: 30px;	color: #888888;}
+nav.tab_Paynavi ul li a:hover,
+nav.tab_Paynavi ul li a:focus {	color: #1B9C9E;}
+nav.tab_Paynavi ul li a.active {	z-index: 3;	color: #1B9C9E;	border-bottom:4px solid #1B9C9E;}
+
+nav.tab_Paynavi01 {	position: relative;	margin-bottom: 50px;}
+nav.tab_Paynavi01 ul {	overflow: hidden;}
+nav.tab_Paynavi01 ul li {	float: left; height:60px; background: #F2F2F2; }
+nav.tab_Paynavi01 ul.col2 li {	width: 50%;}
+nav.tab_Paynavi01 ul.col3 li {	width: 33.3%;}
+nav.tab_Paynavi01 ul.col3 li:first-child {	width: 33.4%;}
+nav.tab_Paynavi01 ul.col4 li {	width: 25%;}
+nav.tab_Paynavi01 ul.col5 li {	width: 20%;}
+nav.tab_Paynavi01 ul.col6 li {	width: 16.7%;}
+nav.tab_Paynavi01 ul.col6 li:first-child {	width: 16.5%;}
+nav.tab_Paynavi01 ul li a {	position: relative;	z-index: 1;	display: block;	text-align: center;	font-weight: bold;	font-size: 18px; line-height: 60px;	color: #717173;	padding-bottom: 18px;}
+nav.tab_Paynavi01 ul li a.active {	z-index: 3;  background:#717173; color:#fff; }
+/*200701*/
+
+
+
+
+
+.service_content .contract_product_payment .cpp_content .payment_current .calculation {
+	position: relative;
+	padding: 50px 0px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table {
+	font-size: 18px;
+	color: #525252;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table thead tr th[scope="col"] {
+	line-height: 27px;
+	padding-bottom: 7px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table tbody tr td {
+	text-align: center;
+	line-height: 32px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table thead tr th[scope="col"]:last-child
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table tbody tr td:last-child {
+	color: #101010;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table tbody tr td strong {
+	font-size: 25px;
+	font-weight: bold;
+	font-family: HK Nova;
+	margin-right: 4px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation table tbody tr td:last-child strong {
+	color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation img.ico {
+	position: absolute;
+	top: 53px;
+	width: 60px;
+	height: 60px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation img.ico.minus {
+	left: 382px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current .calculation img.ico.equal {
+	right: 382px;
+}
+.service_content .contract_product_payment .cpp_content .payment_current p.amount_paid {
+	padding: 40px 0px;
+	margin-bottom: 20px;
+	border: 1px solid #C7C7C7;
+	box-sizing: border-box;
+	border-radius: 3px;
+	color: #444444;
+	font-size: 18px;
+	line-height: 35px;
+	text-align: center;
+}
+.service_content .contract_product_payment .cpp_content .payment_current p.amount_paid strong {
+	color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .payment_history {
+	position: relative;
+}
+.service_content .contract_product_payment .cpp_content .payment_history h4 {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 37px;
+	color: #006466;
+	margin-bottom: 20px;
+}
+.service_content .contract_product_payment .cpp_content .payment_history p.unit {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	line-height: 24px;
+	text-align: right;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table {
+	overflow: visible;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table thead tr th[scope="col"],
+.service_content .contract_product_payment .cpp_content .payment_history table thead tr th[scope="colgroup"] {
+	padding: 18px 0px;
+	font-weight: bold;
+	color: white;
+	background-color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table thead tr th[scope="col"].process {
+	background-color: #004647;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table thead tr th[scope="col"].expect {
+	background-color: #003031;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tbody tr td {
+	color: #444444;
+	font-family: 'HK Nova';
+	padding: 18px 0px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tbody tr:last-child td {
+	border-bottom-width: 0px;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr th[scope="row"],
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr td {
+	position: relative;
+	border-width: 3px 0px;
+	border-style: solid;
+	border-color: #006466;
+	font-weight: 500;
+	line-height: 20px;
+	padding: 28px 0px 25px;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr th[scope="row"] {
+	color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr th[scope="row"]:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 3px;
+	height: 100%;
+	background-color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr td {
+	font-family: 'HK Nova';
+}
+.service_content .contract_product_payment .cpp_content .payment_history table tfoot tr td:last-child:after {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	content: '';
+	display: block;
+	width: 3px;
+	height: 100%;
+	background-color: #006466;
+}
+.service_content .contract_product_payment .cpp_content .none_payment {
+	padding: 50px 0px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: #F1F4F4;
+}
+.service_content .contract_product_payment .cpp_content .none_payment .ico {
+	line-height: 1;
+	margin-bottom: 20px;
+}
+.service_content .contract_product_payment .cpp_content .none_payment p.summary {
+	margin-bottom: 15px;
+	color: #5262AD;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+}
+.service_content .contract_product_payment .cpp_content .none_payment p.detail_cont {
+	line-height: 28px;
+	color: #444444;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide h4 {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 37px;
+	color: #006466;
+	margin-bottom: 20px;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info {
+	overflow: hidden;
+	padding: 40px 0px;
+	border: 1px solid #C7C7C7;
+	border-radius: 3px;
+	margin-bottom: 20px;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li {
+	position: relative;
+	float: left;
+	width: 50%;
+	padding: 0px 80px 0px 188px;
+	box-sizing: border-box;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li:first-child {
+	border-right: 1px solid #C4C4C4;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li h5 {
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li .ico {
+	position: absolute;
+	top: 0px;
+	left: 80px;
+	width: 68px;
+	height: 68px;
+	line-height: 1;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li p {
+	color: #444444;
+	line-height: 25px;
+	font-size: 17px;
+}
+.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li p strong {
+	color: #101010;
+}
+
+/* 입주안내
+**************************************************************/
+/* 입주 전 서비스 */
+.service_content.before_service_intro {
+	position: relative;
+	height: 570px;
+	padding: 0px 0px 120px;
+	background: url(../images/service/before_service_intro.png) no-repeat left top;
+	opacity: 0;
+	transition: 0.42s ease 0.15s top,0.42s ease 0.15s opacity;
+}
+.service_content.before_service_intro.view {
+	opacity: 1;
+}
+.service_content.before_service_intro .bsi_content {
+	position: absolute;
+	top: 120px;
+	right: 98px;
+	width: 475px;
+	padding: 83px 50px 82px 85px;
+	background-color: rgba(255,255,255,0.9);
+	opacity: 0;
+	transition: 0.42s ease 0.25s top,0.42s ease 0.25s opacity;
+}
+.service_content.before_service_intro.view .bsi_content {
+	top: 80px;
+	opacity: 1;
+}
+.service_content.before_service_intro .bsi_content h2 {
+	font-size: 40px;
+	line-height: 60px;
+	margin-bottom: 35px;
+	color: #006466;
+}
+.service_content.before_service_intro .bsi_content p {
+	position: relative;
+	padding-left: 122px;
+	font-size: 17px;
+	line-height: 30px;
+}
+.service_content.before_service_intro .bsi_content p:before {
+	position: absolute;
+	top: 14px;
+	left: -135px;
+	content: '';
+	display: block;
+	width: 227px;
+	height: 1px;
+	background-color: #006466;
+}
+.service_content.service_check {
+	width: 1072px;
+	padding: 0px 122px 0px 0px;
+}
+.service_content.service_check .ck_wrap {
+	position: relative;
+}
+.service_content.service_check .ck_wrap.check1 {
+	padding: 90px 758px 121px 0px;
+	text-align: right;
+}
+.service_content.service_check .ck_wrap.check2 {
+	padding: 196px 0px 120px 526px;
+	margin-left: 96px;
+	text-align: left;
+}
+.service_content.service_check .ck_wrap h2 {
+	position: relative;
+	top: 40px;
+	font-size: 35px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	opacity: 0;
+	transition: 0.42s ease top,0.42s ease opacity;
+}
+.service_content.service_check.view .ck_wrap h2 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.service_check .ck_wrap .photo {
+	position: absolute;
+	top: 40px;
+	opacity: 0;
+	transition: 0.42s ease 0.2s top,0.42s ease 0.2s opacity;
+}
+.service_content.service_check .ck_wrap.check1 .photo {
+	right: 0px;
+}
+.service_content.service_check .ck_wrap.check2 .photo {
+	left: 0px;
+}
+.service_content.service_check.view .ck_wrap .photo {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.service_check .ck_wrap p {
+	position: relative;
+	top: 40px;
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+	opacity: 0;
+	transition: 0.42s ease 0.1s top,0.42s ease 0.1s opacity;
+}
+.service_content.service_check.view .ck_wrap p {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.invite_event {
+	position: relative;
+	left: 48px;
+	width: 1098px;
+	box-sizing: border-box;
+	padding: 251px 700px 278px 0px
+}
+.service_content.invite_event h2 {
+	position: relative;
+	top: 40px;
+	opacity: 0;
+	font-size: 35px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	transition: 0.42s ease top,0.42s ease opacity;
+}
+.service_content.invite_event.view h2 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.invite_event .photo {
+	position: absolute;
+	z-index: 1;
+	top: 114px;
+	right: 0px;
+	opacity: 0;
+	transition: 0.42s ease 0.1s top,0.42s ease 0.1s opacity;
+}
+.service_content.invite_event.view .photo {
+	top: 94px;
+	opacity: 1;
+}
+.service_content.invite_event .welcome {
+	position: absolute;
+	z-index: 2;
+	right: 261px;
+	bottom: 24px;
+	opacity: 0;
+	transition: 0.42s ease 0.6s right,0.42s ease 0.6s bottom,0.42s ease 0.6s opacity;
+}
+.service_content.invite_event.view .welcome {
+	opacity: 1;
+	right: 271px;
+	bottom: 44px;
+}
+.service_content.invite_event p {
+	position: relative;
+	top: 40px;
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+	margin-bottom: 40px;
+	opacity: 0;
+	transition: 0.42s ease 0.42s bottom,0.42s ease 0.2s opacity;
+}
+.service_content.invite_event.view p {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.invite_event ul.app_download:after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	clear: left;
+	margin-top: -2px;
+}
+.service_content.invite_event ul.app_download li {
+	position: relative;
+	float: left;
+	margin-right: 9px;
+	opacity: 0;
+}
+.service_content.invite_event ul.app_download li:nth-child(1) {
+	top: 40px;
+	transition: 0.42s ease 0.2s top,0.42s ease 0.2s opacity;
+}
+.service_content.invite_event ul.app_download li:nth-child(2) {
+	top: 60px;
+	transition: 0.42s ease 0.3s top,0.42s ease 0.3s opacity;
+}
+.service_content.invite_event.view ul.app_download {
+	height:166px;
+}
+.service_content.invite_event.view ul.app_download li {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.invite_event ul.app_download li a {
+	position: relative;
+	display: block;
+	width: 111px;
+	height: 106px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 27px;
+	padding: 29px 29px 29px 34px;
+	border: 1px solid #101010;
+	transition: 0.42s ease color, 0.42s ease border-color;
+}
+.service_content.invite_event ul.app_download li a strong {
+	font-weight: bold;
+	font-size: 20px;
+}
+.service_content.invite_event ul.app_download li a:hover,
+.service_content.invite_event ul.app_download li a:focus {
+	color: #1B9C9E;
+	border-color: #1B9C9E;
+}
+.service_content.invite_event ul.app_download li a:before {
+	position: absolute;
+	top: 114px;
+	right: 36px;
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/template/ico_file_down.png) no-repeat left top;
+	transition: top 0.42s ease;
+}
+.service_content.invite_event ul.app_download li a:after {
+	position: absolute;
+	bottom: 29px;
+	right: 29px;
+	content: '';
+	display: block;
+	width: 27px;
+	height: 6px;
+	background: url(../images/template/ico_file_load.png) no-repeat left top;
+}
+.service_content.invite_event ul.app_download li a:hover:before,
+.service_content.invite_event ul.app_download li a:hover:after,
+.service_content.invite_event ul.app_download li a:focus:before,
+.service_content.invite_event ul.app_download li a:focus:after {
+	background-position: right top;
+}
+.service_content.invite_event ul.app_download li a:hover:before,
+.service_content.invite_event ul.app_download li a:focus:before {
+	top: 120px;
+}
+
+/* 입주절차 */
+.service_content.occupancy_process {
+	padding-top: 10px;
+}
+.service_content.occupancy_process ol.op_summary {
+	width: 1020px;
+	margin: 0px auto 80px;
+	overflow: hidden;
+	counter-reset: op_step;
+}
+.service_content.occupancy_process ol.op_summary li {
+	position: relative;
+	float: left;
+	width: 140px;
+	padding: 0px 35px 0px 45px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	counter-increment: op_step;
+	background: url(../images/service/bullet_occupancy_process.png) no-repeat left 63px;
+}
+.service_content.occupancy_process ol.op_summary li:first-child {
+	padding-left: 0px;
+	background-image: none;
+}
+.service_content.occupancy_process ol.op_summary li:last-child {
+	padding-right: 0px;
+}
+.service_content.occupancy_process ol.op_summary li:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: block;
+	width: 100%;
+	padding: 48px 35px 48px 45px;
+	box-sizing: border-box;
+	content:counter(op_step);
+	color: #1EBEC0;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 44px;
+}
+.service_content.occupancy_process ol.op_summary li:first-child:before {
+	padding-left: 0px;
+}
+.service_content.occupancy_process ol.op_summary li:last-child:before {
+	padding-right: 0px;
+}
+.service_content.occupancy_process ol.op_summary li .gauge {
+	position: relative;
+	width: 140px;
+	height: 140px;
+	margin-bottom: 20px;
+}
+.service_content.occupancy_process ol.op_summary li .gauge svg {
+	position: absolute !important;
+	top: 0px;
+	left: 0px !important;
+	width: 140px;
+	height: 140px;
+}
+.service_content.occupancy_process ol.op_summary li .circle-chart__text {
+	display: none;
+}
+.service_content.occupancy_process dl.op_detail {
+	border-top: 4px solid #101010;
+	margin-bottom: 30px;
+}
+.service_content.occupancy_process dl.op_detail dt {
+	position: relative;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 44px;
+	padding: 50px 0px 10px 200px;
+}
+.service_content.occupancy_process dl.op_detail dt img.ico {
+	position: absolute;
+	top: 50px;
+	left: 40px;
+	width: 110px;
+	height: 110px;
+}
+.service_content.occupancy_process dl.op_detail dd {
+	padding: 0px 0px 50px 210px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.service_content.occupancy_process dl.op_detail dd:last-child {
+	border-bottom-width: 0px;
+}
+.service_content.occupancy_process .btn_real_estate_tax {
+	margin-top: 10px;
+	text-align: center;
+}
+.service_content.occupancy_process .btn_real_estate_tax a {
+	display: inline-block;
+	width: 420px;
+	padding: 12px 0px 13px;
+	color: white;
+	border-radius: 100px;
+	background-color: #444444;
+}
+.service_content.occupancy_process .btn_real_estate_tax a:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 12px;
+	margin-left: 12px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+
+/* 입주절차 */
+.service_content.occupancy_guide {
+	width: 1298px;
+	margin: 0px auto;
+}
+.service_content.occupancy_guide h2 {
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 56px;
+	text-align: center;
+	letter-spacing: -0.025em;
+	margin-bottom: 20px;
+}
+.service_content.occupancy_guide p.intro_guide {
+	color: #444444;
+	font-size: 17px;
+	line-height: 30px;
+	text-align: center;
+}
+.service_content.occupancy_guide ul.og_list {
+	margin-top: 10px;
+}
+.service_content.occupancy_guide ul.og_list:after {
+	clear: left;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: -2px;
+}
+.service_content.occupancy_guide ul.og_list li {
+	position: relative;
+	float: left;
+	width: 287px;
+	height: 340px;
+	padding-top: 35px;
+	margin: 60px 0px 0px 50px;
+	background-color: white;
+	box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n-1) {
+	color: #907E72;
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n) {
+	color: #1B9C9E;
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(4n-3) {
+	margin-left: 0px;
+}
+.service_content.occupancy_guide ul.og_list li p {
+	padding: 0px 30px;
+}
+.service_content.occupancy_guide ul.og_list li p.period {
+	line-height: 1;
+	padding-bottom: 25px;
+}
+.service_content.occupancy_guide ul.og_list li p.period b {
+	display: inline-block;
+	padding-bottom: 2px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 21px;
+	color: #888888;
+	border-bottom: 1px solid #D6D6D6;
+}
+.service_content.occupancy_guide ul.og_list li p.name {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 37px;
+	padding-bottom: 5px;
+}
+.service_content.occupancy_guide ul.og_list li p.guide {
+	opacity: 0.6;
+	font-size: 17px;
+	line-height: 25px;
+	padding-bottom: 30px;
+}
+.service_content.occupancy_guide ul.og_list li .photo {
+	height: 145px;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	transition: 0.42s ease opacity;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	overflow: hidden;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a {
+	position: relative;
+	float: left;
+	width: 50%;
+	padding: 13px 30px;
+	color: white;
+	box-sizing: border-box;
+	border-right: 1px solid rgba(218,211,203,0.3);
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n-1) .btn_pdf a {
+	background-color: #907E72;
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n) .btn_pdf a {
+	background-color: #1B9C9E;
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n-1) .photo {
+	background-color: #DAD3CB;
+}
+.service_content.occupancy_guide ul.og_list li:nth-child(2n) .photo {
+	background-color: #CEDFDF;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:last-child {
+	border-right-width: 0px;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:only-child {
+	width: 100%;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:before {
+	position: absolute;
+	top: 16px;
+	right: 36px;
+	content: '';
+	display: block;
+	width: 11px;
+	height: 12px;
+	background: url(../images/service/ico_pdf_down.png) no-repeat left top;
+	transition: 0.42s ease top;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:after {
+	position: absolute;
+	right: 30px;
+	bottom: 16px;
+	content: '';
+	display: block;
+	width: 24px;
+	height: 5px;
+	background: url(../images/service/ico_pdf_load.png) no-repeat left top;
+}
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:hover:before,
+.service_content.occupancy_guide ul.og_list li .btn_pdf a:focus:before {
+	top: 21px;
+}
+.service_content.occupancy_guide p.note {
+	margin-top: 50px;
+	font-size: 15px;
+	line-height: 22px;
+	color: #444444;
+}
+.service_content.occupancy_guide p.note img.ico {
+	vertical-align: middle;
+	margin-right: 8px;
+	position: relative;
+	top: -1px;
+}
+.service_content.occupancy_guide p.note a {
+	color: #101010;
+	font-weight: bold;
+}
+.service_content.occupancy_guide p.note a:hover,
+.service_content.occupancy_guide p.note a:focus {
+	border-bottom: 1px solid #101010;
+}
+
+/* 초청행사방문예약 & 입주예약
+**************************************************************/
+.service_content.event_visit_reserve {
+	padding-top: 0px;
+	background-color: white;
+}
+.service_content.event_visit_reserve:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+	width: 100%;
+	height: 470px;
+	background-color: #F2F2F2;
+}
+.service_content.event_visit_reserve .times_tb {
+	position: relative;
+	box-sizing: border-box;
+	padding: 0px 120px;
+}
+.service_content.event_visit_reserve .times_tb h2 {
+	position: relative;
+	margin: 70px 0px 20px;
+}
+.service_content.event_visit_reserve .times_tb h2 > span {
+	top: -7px;
+}
+.service_content.event_visit_reserve .times_tb table tbody tr td.contract_info_use {
+	line-height: 28px;
+}
+.service_content.event_visit_reserve .times_tb table tbody tr td.contract_info_use strong {
+	color: #1B9C9E;
+}
+.service_content.event_visit_reserve .times_tb table tbody tr td.contract_info_use a {
+	font-weight: 500;
+	margin-left: 3px;
+}
+.service_content.event_visit_reserve .times_tb table tbody tr td.contract_info_use a:hover,
+.service_content.event_visit_reserve .times_tb table tbody tr td.contract_info_use a:focus {
+	border-bottom: 1px solid #101010;
+}
+
+/* 초청행사방문예약 & 입주예약
+**************************************************************/
+.service_content.event_visit_reserve .times_tb {
+	padding: 0px 60px;
+}
+
+/*200701 추가*/
+.app_cal .times_tb p.noDate  {font-weight: 300; font-size: 16px; color: #888888; }
+.event_visitCan { position: absolute; right: 0; padding: 9px 18px; border: 1px solid #907E72; box-sizing: border-box; border-radius: 3px; font-weight: 500; font-size: 15px; text-align: center; color: #907E72; top: 33px;}
+.event_visit_history { padding-top:0}
+.event_visit_history .times_tb  {position: relative;}
+.event_visit_history .times_tb h2 > strong { display: contents; background: none; font-weight: bold; font-size: 28px; color: #1B9C9E;}
+.visitTime { width:590px;  }
+.visitTime ul {  display:inline-block}
+.visitTime ul li {width: 180px; text-align: center; margin: 0 0 10px 10px; float: left; }
+.visitTime ul li a.disabled {border: 1px solid #C7C7C7;  background: #F2F2F2; color: #A8A8A8;}
+.visitTime ul li a.disabled:hover { border: 1px solid #C7C7C7; }
+.visitTime ul li a.disabled span   { color: #A8A8A8;} 
+.visitTime ul li a.on,
+.visitTime ul li a:hover  {border: 2px solid #1B9C9E; }
+.visitTime ul li:nth-child(3n-2)  { margin-left:0}
+.visitTime ul li a { border: 1px solid #C7C7C7; box-sizing: border-box; border-radius: 3px; font-weight: bold; font-size: 17px; line-height: 22px; font-family: HK Nova; height: 80px; color: #101010; padding: 20px 0; display: block;}
+.visitTime ul li a > span { font-size: 15px; line-height: 22px;text-align: center;color: #444444;    display: block}
+
+
+
+/* A/S
+**************************************************************/
+/* A/S 신청 및 조회 */
+.service_content.as_guide {
+	padding-bottom: 50px;
+}
+.service_content.as_guide .ask_inquiry {
+	overflow: hidden;
+	padding: 50px 75px;
+	margin-bottom: 40px;
+	border: 5px solid #ECECEC;
+}
+.service_content.as_guide .ask_inquiry p {
+	float: left;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.service_content.as_guide .ask_inquiry .btn_set {
+	float: right;
+}
+.service_content.as_guide .ask_inquiry .btn_set a {
+	display: inline-block;
+	border-radius: 100px;
+	padding: 10px 30px;
+	color: white;
+	line-height: 30px;
+	margin-left: 7px;
+	background-color: #717173;
+}
+.service_content.as_guide .ask_inquiry .btn_set a:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 8px;
+	height: 12px;
+	margin-left: 21px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.service_content.as_guide .ask_inquiry .btn_set a.ask {
+	background-color: #1EBEC0;
+}
+.service_content.as_guide ul.contact_us {
+	margin-top: 40px;
+	overflow: hidden;
+}
+.service_content.as_guide ul.contact_us li {
+	float: left;
+	width: 50%;
+	height: 310px;
+	padding: 70px 0px 0px 260px;
+	box-sizing: border-box;
+}
+.service_content.as_guide ul.contact_us li.cs_center {
+	color: white;
+	background: #1B9C9E url(../images/cscenter/ico_common_cscenter.png) no-repeat 113px 119px;
+}
+.service_content.as_guide ul.contact_us li.security {
+	background: #ECECEC url(../images/service/ico_as_security.png) no-repeat 113px 119px;
+}
+.service_content.as_guide ul.contact_us li h2 {
+	font-size: 28px;
+	line-height: 30px;
+	margin-bottom: 14px;
+}
+.service_content.as_guide ul.contact_us li.cs_center h2 {
+	color: white;
+}
+.service_content.as_guide ul.contact_us li.security h2 span.law {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1B9C9E;
+	margin-left: 8px;
+}
+.service_content.as_guide ul.contact_us li p.guide {
+	font-size: 18px;
+	line-height: 30px;
+}
+.service_content.as_guide ul.contact_us li p.tel {
+	margin-top: 15px;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 64px;
+	color: #90E9E7;
+}
+.service_content.as_guide ul.contact_us li.security .btn {
+	margin-top: 25px;
+}
+.service_content.as_guide ul.contact_us li.security .btn a {
+	display: block;
+	width: 215px;
+	padding: 9px 0px;
+	font-size: 16px;
+	text-align: center;
+	line-height: 30px;
+	font-weight: 500;
+	border: 1px solid #101010;
+	border-radius: 100px;
+	background-color: transparent;
+	transition: 0.3s ease color,0.3s ease background-color;
+}
+.service_content.as_guide ul.contact_us li.security .btn a:hover,
+.service_content.as_guide ul.contact_us li.security .btn a:focus {
+	color: white;
+	background-color: #101010;
+}
+
+/* A/S 처리절차 안내 */
+.service_content.as_process_guide {
+	padding: 50px 0px 0px;
+	margin-bottom: 150px;
+}
+.service_content.as_process_guide h2 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 38px;
+	line-height: 56px;
+	margin-bottom: 20px;
+}
+.service_content.as_process_guide .apg_list {
+	position: relative;
+	width: 1196px;
+	margin: 0px auto;
+}
+.service_content.as_process_guide .apg_list ol li {
+	position: relative;
+	margin-top: 60px;
+	padding: 0px 500px 0px 160px;
+	height: 379px;
+	z-index: 3;
+	white-space: nowrap;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(1) {
+	margin-top: 0px;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(1):before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	content: '';
+	display: block;
+	width: 80px;
+	height: 127px;
+	background-color: white;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(5):after {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 2;
+	content: '';
+	display: block;
+	width: 80px;
+	height: 240px;
+	background-color: white;
+}
+.service_content.as_process_guide .apg_list ol li h3 {
+	position: absolute;
+	z-index: 3;
+	top: 113px;
+	left: 0px;
+	display: block;
+	width: 80px;
+	height: 80px;
+	padding: 22px 0px 14px;
+	color: white;
+	font-size: 17px;
+	line-height: 22px;
+	font-family: 'HK Nova';
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 40px;
+	box-sizing: border-box;
+	background-color: #A8A8A8;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(1) h3 {
+	top: 87px;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(5) h3 {
+	top: 98px;
+}
+.service_content.as_process_guide .apg_list ol li.active h3 {
+	background-color: #1EBEC0;
+}
+.service_content.as_process_guide .apg_list ol li .cont {
+	width: 494px;
+	padding-top: 123px;
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	transition: 0.5s ease top,0.5s ease opacity;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(1) .cont {
+	padding-top: 91px;
+}
+.service_content.as_process_guide .apg_list ol li:nth-child(5) .cont {
+	padding-top: 108px;
+}
+.service_content.as_process_guide .apg_list ol li.view .cont {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.as_process_guide .apg_list ol li .cont h4 {
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 58px;
+	color: #888888;
+	margin-bottom: 15px;
+}
+.service_content.as_process_guide .apg_list ol li.active .cont h4 {
+	color: #1B9C9E;
+}
+.service_content.as_process_guide .apg_list ol li .cont p {
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+}
+.service_content.as_process_guide .apg_list ol li .cont p.contact {
+	margin-top: 40px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #907E72;
+}
+.service_content.as_process_guide .apg_list ol li .photo {
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	width: 430px;
+	height: 379px;
+	opacity: 0;
+	transition: 0.5s ease 0.2s top,0.5s ease 0.2s opacity;
+}
+.service_content.as_process_guide .apg_list ol li.view .photo {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.as_process_guide .apg_list ol li .photo img {
+	width: 430px;
+	height: 379px;
+}
+.service_content.as_process_guide .apg_list .gauge_bg {
+	position: absolute;
+	top: 0px;
+	left: 40px;
+	z-index: 1;
+	width: 1px;
+	height: 100%;
+	overflow: hidden;
+}
+.service_content.as_process_guide .apg_list .gauge_bg:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 0px;
+	height: 100%;
+	border-left: 1px dashed #C7C7C7;
+}
+.service_content.as_process_guide .apg_list .gauge_bg .gauge_bar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 2;
+	width: 0px;
+	height: 0%;
+	border-right: 1px solid #1EBEC0;
+}
+
+/* A/S 하자담보책임기간 팝업 테이블 */
+.layer_popup .lp_content .defect_mortgage_liability h4 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 15px;
+}
+.layer_popup .lp_content .defect_mortgage_liability table {
+	border-top: 2px solid #1B9C9E;
+}
+.layer_popup .lp_content .defect_mortgage_liability table thead tr th,
+.layer_popup .lp_content .defect_mortgage_liability table tbody tr th,
+.layer_popup .lp_content .defect_mortgage_liability table tbody tr td {
+	padding: 18px 0px;
+	line-height: 24px;
+	text-align: center;
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	border-color: #C7C7C7;
+}
+.layer_popup .lp_content .defect_mortgage_liability table thead tr th {
+	background-color: #F1F4F4;
+}
+.layer_popup .lp_content .defect_mortgage_liability table thead tr th:first-child,
+.layer_popup .lp_content .defect_mortgage_liability table tbody tr th:first-child {
+	border-left-width: 0px;
+}
+
+
+/* 헤스티아 서비스
+**************************************************************/
+/* 헤스티아 비쥬얼 */
+.service_content.hestia_visual {
+	height: 530px;
+	padding: 0px;
+	background: url(../images/service/visual_hestia_benefit.png) no-repeat center top;
+}
+
+/* 헤스티아 특권&혜택 */
+.service_content.hestia_benefit {
+	position: relative;
+	overflow: hidden;
+	padding-top: 0px;
+	margin-top: -100px !important;
+}
+.service_content.hestia_benefit .service_brand {
+	margin-right: 98px;
+	width: 684px;
+	padding: 70px 75px;
+	margin-left: 658px;
+	box-sizing: border-box;
+	color: white;
+	background-color: #006466;
+	position: relative;
+	top: 40px;
+	opacity: 0;
+	transition: 0.3s ease top,0.3s ease opacity;
+}
+.service_content.hestia_benefit.view .service_brand {
+	position: relative;
+	top: 0px;
+	opacity: 1;
+	transition: 0.3s ease top,0.3s ease opacity;
+}
+.service_content.hestia_benefit .service_brand h2 {
+	font-size: 38px;
+	line-height: 55px;
+	color: white;
+	margin-bottom: 30px;
+}
+.service_content.hestia_benefit .service_brand p {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 30px;
+	opacity: 0.8;
+}
+.service_content.hestia_benefit .chatter {
+	margin: -210px 0px 0px 118px;
+	position: relative;
+	top: 40px;
+	opacity: 0;
+	transition: 0.3s ease 0.1s top,0.3s ease 0.1s opacity;
+}
+.service_content.hestia_benefit.view .chatter {
+	position: relative;
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_benefit .chatter h3 {
+	position: relative;
+	padding: 62px 0px 64px;
+	font-size: 35px;
+	line-height: 52px;
+	margin-bottom: 60px;
+}
+.service_content.hestia_benefit .chatter h3:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 38px;
+	height: 32px;
+	background: url(../images/service/bullet_hestia_chatter1.png) no-repeat left top;
+}
+.service_content.hestia_benefit .chatter h3:after {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 38px;
+	height: 32px;
+	background: url(../images/service/bullet_hestia_chatter2.png) no-repeat left top;
+}
+.service_content.hestia_benefit .chatter p {
+	font-size: 17px;
+	line-height: 30px;
+}
+
+/* 헤스티아 라운지 */
+.service_content.hestia_lounge {
+	position: relative;
+	width: 100%;
+	padding: 111px 0px 70px;
+}
+.service_content.hestia_lounge:before {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	z-index: 1;
+	content: '';
+	display: block;
+	width: 50%;
+	height: 100%;
+	box-sizing: border-box;
+	border-width: 111px 0px 70px;
+	border-style: solid;
+	border-color: white;
+	background-color: #F2F2F2;
+}
+.service_content.hestia_lounge .hl_wrap {
+	position: relative;
+	z-index: 2;
+	width: 1200px;
+	padding: 125px 0px 138px 756px;
+	margin: 0px auto;
+	box-sizing: border-box;
+	background-color: #F2F2F2;
+}
+.service_content.hestia_lounge .hl_wrap:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: -126px;
+	width: 126px;
+	height: 100%;
+	background-color: #F2F2F2;
+}
+.service_content.hestia_lounge .hl_wrap h2 {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	font-size: 35px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	opacity: 0;
+	transition: 0.3s ease 0.1s top,0.3s ease 0.1s opacity;
+}
+.service_content.hestia_lounge.view .hl_wrap h2 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_lounge .hl_wrap .photo {
+	position: absolute;
+	top: -21px;
+	left: 0px;
+	width: 694px;
+	line-height: 1;
+	opacity: 0;
+	transition: 0.3s ease top,0.3s ease opacity;
+}
+.service_content.hestia_lounge.view .hl_wrap .photo {
+	top: -71px;
+	opacity: 1;
+}
+.service_content.hestia_lounge .hl_wrap p {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	width:90%;
+	font-size: 17px;
+	line-height: 30px;
+	opacity: 0;
+	transition: 0.3s ease 0.1s top,0.3s ease 0.1s opacity;
+}
+.service_content.hestia_lounge.view .hl_wrap p {
+	top: 0px;
+	opacity: 1;
+}
+
+/* 헤스티아 매니저 */
+.service_content.hestia_manager {
+	position: relative;
+	width: 1057px;
+	padding: 110px 0px 70px 143px;
+}
+.service_content.hestia_manager h2 {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	font-size: 35px;
+	line-height: 52px;
+	margin-bottom: 15px;
+	transition: 0.3s ease top,0.3s ease opacity;
+}
+.service_content.hestia_manager.view h2 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_manager p {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	font-size: 17px;
+	line-height: 30px;
+	transition: 0.3s ease 0.1s top,0.3s ease 0.1s opacity;
+}
+.service_content.hestia_manager.view p {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_manager .photo1 {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	margin-top: 90px;
+	width: 487px;
+	line-height: 1;
+	transition: 0.3s ease 0.2s top,0.3s ease 0.2s opacity;
+}
+.service_content.hestia_manager.view .photo1 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_manager .photo2 {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	position: absolute;
+	right: 0px;
+	top: 70px;
+	width: 448px;
+	line-height: 1;
+	transition: 0.3s ease 0.3s top,0.3s ease 0.3s opacity;
+}
+.service_content.hestia_manager.view .photo2 {
+	top: 0px;
+	opacity: 1;
+}
+
+/* 서비스 소개 */
+.service_content.hestia_intro {
+	position: relative;
+	width: 100%;
+	padding: 70px 0px 365px;
+	text-align: center;
+}
+.service_content.hestia_intro:after {
+	position: absolute;
+	z-index: 1;
+	bottom: 0px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 525px;
+	background: #F2F2F2 url(../images/service/logo_hestia.png) no-repeat center 260px;
+}
+.service_content.hestia_intro h2 {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	font-size: 38px;
+	line-height: 56px;
+	margin-bottom: 20px;
+	transition: 0.3s ease top,0.3s ease opacity;
+}
+.service_content.hestia_intro.view h2 {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_intro p.intro_guide {
+	position: relative;
+	top: 50px;
+	opacity: 0;
+	font-size: 17px;
+	line-height: 30px;
+	margin-bottom: 60px;
+	transition: 0.3s ease 0.1s top,0.3s ease 0.1s opacity;
+}
+.service_content.hestia_intro.view p.intro_guide {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_intro ul.service {
+	width: 972px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.service_content.hestia_intro ul.service li {
+	position: relative;
+	opacity: 0;
+	float: left;
+	margin-left: 113px;
+}
+.service_content.hestia_intro ul.service li:nth-child(1) {
+	top: 40px;
+	margin-left: 0px;
+	transition: 0.3s ease 0.2s top,0.3s ease 0.2s opacity;
+}
+.service_content.hestia_intro ul.service li:nth-child(2) {
+	top: 60px;
+	transition: 0.3s ease 0.3s top,0.3s ease 0.3s opacity;
+}
+.service_content.hestia_intro ul.service li:nth-child(3) {
+	top: 80px;
+	transition: 0.3s ease 0.4s top,0.3s ease 0.4s opacity;
+}
+.service_content.hestia_intro.view ul.service li {
+	top: 0px;
+	opacity: 1;
+}
+.service_content.hestia_intro ul.service li h3 {
+	width: 170px;
+	height: 170px;
+	padding: 53px 0px 52px;
+	margin: 0px auto;
+	border-radius: 85px;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: bold;
+	box-sizing: border-box;
+	background-color: #1EBEC0;
+}
+.service_content.hestia_intro ul.service li h3 strong {
+	display: block;
+	margin-bottom: 5px;
+	opacity: 0.6;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 30px;
+	font-family: HK Nova;
+}
+.service_content.hestia_intro ul.service li p {
+	margin-top: 25px;
+	color: #444444;
+	font-size: 17px;
+	line-height: 30px;
+}
+.service_content.hestia_intro ul.photo {
+	position: relative;
+	z-index: 2;
+	overflow: hidden;
+	width: 1440px;
+	margin: 80px auto 0px;
+}
+.service_content.hestia_intro ul.photo li {
+	float: left;
+	margin-left: 24px;
+	position: relative;
+	opacity: 0;
+}
+.service_content.hestia_intro ul.photo li:nth-child(1) {
+	margin-left: 0px;
+	top: 40px;
+	transition: 0.3s ease 0.5s top,0.3s ease 0.5s opacity;
+}
+.service_content.hestia_intro ul.photo li:nth-child(2) {
+	top: 60px;
+	transition: 0.3s ease 0.6s top,0.3s ease 0.6s opacity;
+}
+.service_content.hestia_intro.view ul.photo li {
+	opacity: 1;
+	top: 0px;
+}
+
+
+/* 래미안 생활 가이드
+**************************************************************/
+/* 리빙 가이드 */
+.living_guide {
+	position: relative;
+	height: 470px;
+	padding: 115px 0px 115px 952px;
+	background: url(../images/service/visual_living_guide.png) no-repeat left top;
+}
+.living_guide h2 {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 52px;
+	color: #1B9C9E;
+	margin-bottom: 15px;
+}
+.living_guide .photo {
+	position: absolute;
+	top: 83px;
+	left: 488px;
+	width: 366px;
+	height: 474px;
+	background-color: white;
+	box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15);
+}
+.living_guide p.intro {
+	color: #444444;
+	font-size: 17px;
+	line-height: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px solid #D6D6D6;
+}
+.living_guide ul {
+	overflow: hidden;
+}
+.living_guide ul li {
+	position: relative;
+	float: left;
+	width: 156px;
+	padding-left: 34px;
+	font-size: 17px;
+	line-height: 40px;
+	color: #444444;
+}
+.living_guide ul li:nth-child(2n) {
+	margin-left: 54px;
+}
+.living_guide ul li strong {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: #1EBEC0;
+}
+.living_guide .btn_guide_download {
+	margin-top: 60px;
+}
+.living_guide .btn_guide_download a {
+	position: relative;
+	padding: 18px 88px 18px 46px;
+	border: 1px solid #101010;
+	box-sizing: border-box;
+	border-radius: 100px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+.living_guide .btn_guide_download a:before {
+	position: absolute;
+	top: 19px;
+	right: 52px;
+	content: '';
+	display: block;
+	width: 14px;
+	height: 14px;
+	background: url(../images/template/ico_file_down.png) no-repeat left top;
+	transition: 0.3s ease top;
+}
+.living_guide .btn_guide_download a:after {
+	position: absolute;
+	bottom: 19px;
+	right: 45px;
+	content: '';
+	display: block;
+	width: 27px;
+	height: 6px;
+	background: url(../images/template/ico_file_load.png) no-repeat left top;
+}
+.living_guide .btn_guide_download a:hover:before,
+.living_guide .btn_guide_download a:focus:before {
+	top: 23px;
+}
+.living_guide p.pdf_download {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+.living_guide p.pdf_download img.ico {
+	position: relative;
+	top: -2px;
+	margin-right: 8px;
+	font-size: 15px;
+	line-height: 22px;
+	color: #444444;
+}
+.living_guide p.pdf_download a {
+	font-weight: 500;
+}
+.living_guide p.pdf_download a:hover,
+.living_guide p.pdf_download a:focus {
+	border-bottom: 1px solid #101010;
+}
+
+/* 내 집 손보기 */
+ul.care_my_house {
+	border-top: 4px solid #101010;
+	padding-bottom: 26px;
+}
+ul.care_my_house:after {
+	content: '';
+	display: block;
+	clear: left;
+	width: 100%;
+	height: 2px;
+	margin-top: -2px;
+}
+ul.care_my_house li {
+	float: left;
+	margin: 50px 0px 0px 45px;
+}
+ul.care_my_house li:nth-child(3n-2) {
+	margin-left: 0px;
+}
+ul.care_my_house li a {
+	display: block;
+	width: 450px;
+	height: 490px;
+	padding: 39px 0px 0px 39px;
+	border: 1px solid #C7C7C7;
+	box-sizing: border-box;
+	transition: 0.3s ease box-shadow;
+}
+ul.care_my_house li a:hover,
+ul.care_my_house li a:focus {
+	box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.1);
+}
+ul.care_my_house li a figure .photo {
+	width: 409px;
+	height: 262px;
+	margin-bottom: 25px;
+}
+ul.care_my_house li a figure .photo img {
+	width: 409px;
+	height: 262px;
+}
+ul.care_my_house li a figure figcaption {
+	display: block;
+}
+ul.care_my_house li a figure figcaption p.subject {
+	height: 70px;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 38px;
+	margin: 0px 50px 33px 0px;
+	overflow: hidden;
+}
+ul.care_my_house li a figure figcaption p.date {
+	padding-top: 20px;
+	border-top: 1px solid #101010;
+	font-size: 16px;
+	line-height: 20px;
+}
+ul.care_my_house li a figure figcaption p.date time {
+	color: #888888;
+	font-family: 'HK Nova';
+}
+
+/* Safety Label */
+dl.about_safety_label {
+	padding: 70px 40px 70px 260px;
+	background: #F1F4F4 url(../images/service/safety_label/ico_safety_label.png) no-repeat 80px 70px;
+}
+dl.about_safety_label dt {
+	font-family: 'HK Nova';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 36px;
+	color: #006466;
+	margin-bottom: 20px;
+}
+dl.about_safety_label dd {
+	font-size: 17px;
+	line-height: 30px;
+}
+ul.safety_label {
+	overflow: hidden;
+	padding-top: 36px;
+}
+ul.safety_label li {
+	position: relative;
+	float: left;
+	width: 708px;
+	height: 300px;
+	padding: 40px 30px 90px 382px;
+	box-sizing: border-box;
+	margin: 24px 0px 0px 24px;
+}
+ul.safety_label li:nth-child(2n-1) {
+	margin-left: 0px;
+}
+ul.safety_label li:after {
+	content: '';
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: 1px solid #C7C7C7;
+	box-sizing: border-box;
+}
+ul.safety_label li .photo {
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	left: 0px;
+	width: 342px;
+	height: 100%;
+	overflow: hidden;
+}
+ul.safety_label li .photo img {
+	width: 342px;
+	height: 300px;
+}
+ul.safety_label li p.condition {
+	margin-bottom: 15px;
+	font-weight: bold;
+	font-size: 15px;
+}
+ul.safety_label li p.condition img.ico {
+	position: relative;
+	top: -1px;
+	margin-right: 5px;
+}
+ul.safety_label li p.summary {
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 41px;
+	margin-bottom: 6px;
+}
+ul.safety_label li p.desc {
+	color: #444444;
+}
+ul.safety_label li p.label {
+	position: absolute;
+	bottom: 40px;
+	left: 382px;
+	line-height: 1;
+}
+
+
+/* 래미안웰스토리몰
+**************************************************************/
+.service_content.welstorymall_visual {
+	position: relative;
+	z-index: 2;
+	height: 500px;
+	padding-bottom: 0px;
+	margin-bottom: -120px;
+	background: url(../images/service/photo_welstorymall_visual.png) no-repeat center top;
+}
+.service_content.welstorymall_customer_only {
+	padding: 220px 0px 50px;
+	text-align: center;
+}
+.service_content.welstorymall_customer_only h2 {
+	font-size: 38px;
+	line-height: 56px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.service_content.welstorymall_customer_only p.intro_guide {
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 60px;
+}
+.service_content.welstorymall_customer_only ul.benefit {
+	overflow: hidden;
+	width: 1200px;
+	margin: 60px auto 80px auto;
+}
+.service_content.welstorymall_customer_only ul.benefit li {
+	float: left;
+	width: 370px;
+	height: 470px;
+	padding: 35px 0px 217px;
+	margin-left: 45px;
+	border-top: 4px solid #1B9C9E;
+	box-sizing: border-box;
+	background-color: white;
+	background-repeat: no-repeat;
+}
+.service_content.welstorymall_customer_only ul.benefit li:first-child {
+	margin-left: 0px;
+}
+.service_content.welstorymall_customer_only ul.benefit li.food {
+	background-image: url(../images/service/photo_wco_food.png);
+	background-position: left bottom;
+}
+.service_content.welstorymall_customer_only ul.benefit li.electronics {
+	background-image: url(../images/service/photo_wco_mobile.png);
+	background-position: left bottom;
+}
+.service_content.welstorymall_customer_only ul.benefit li.mobile {
+	background-image: url(../images/service/photo_wco_electronics.png);
+	background-position: left bottom;
+}
+.service_content.welstorymall_customer_only ul.benefit li .txt {
+	height: 90px;
+	margin-top: 20px;
+	white-space: nowrap;
+}
+.service_content.welstorymall_customer_only ul.benefit li .txt:before {
+	content: '';
+	display: inline-block;
+	width: 2px;
+	height: 100%;
+	vertical-align: middle;
+	margin-left: -2px;
+}
+.service_content.welstorymall_customer_only ul.benefit li .txt p {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+}
+.service_content.welstorymall_customer_only .btn_look_around {
+	text-align: center;
+}
+.service_content.welstorymall_customer_only .btn_look_around a {
+	display: inline-block;
+	padding: 20px 45px;
+	border-radius: 100px;
+	color: white;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	background-color: #006466;
+}
+.service_content.welstorymall_customer_only .btn_look_around a:after {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	margin-left: 19px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.service_content.welstorymall_qualifying {
+	padding: 116px 0px 150px;
+}
+.service_content.welstorymall_qualifying h2 {
+	font-size: 38px;
+	line-height: 56px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+.service_content.welstorymall_qualifying .member_condition {
+	position: relative;
+	width: 1004px;
+	margin: 10px auto 70px;
+	padding: 30px 60px;
+	border-radius: 100px;
+	background-color: #F1F4F4;
+}
+.service_content.welstorymall_qualifying .member_condition p.content {
+	padding-right: 200px;
+	line-height: 30px;
+	color: #444444;
+	font-size: 18px;
+}
+.service_content.welstorymall_qualifying .member_condition p.content strong {
+	font-weight: bold;
+	font-weight: bold;
+	font-size: 20px;
+}
+.service_content.welstorymall_qualifying .member_condition p.content strong.type {
+	color: #1B9C9E;
+}
+.service_content.welstorymall_qualifying .member_condition a.btn_welstorymall {
+	position: absolute;
+	top: 33px;
+	right: 60px;
+	color: #1B9C9E;
+	padding-right: 13px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	background: url(../images/service/bullet_welstorymall.png) no-repeat right center;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process {
+	width: 1064px;
+	margin: 30px auto;
+	counter-reset: welstorymall-process;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li {
+	display: inline-block;
+	width: 286px;
+	margin: 0px 0px 70px 34px;
+	padding-left: 64px;
+	text-align: center;
+	vertical-align: top;
+	background: url(../images/service/bullet_gpp_arrow.png) no-repeat left 72px;
+	counter-increment: welstorymall-process;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li:nth-child(1) {
+	margin-left: 0px;
+	background-image: none;
+	padding-left: 0px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li:nth-child(4) {
+	margin-left: 150px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li .ico {
+	height: 170px;
+	margin-bottom: 35px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li p.summary {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 33px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li p.summary:before {
+	content: "0" counter(welstorymall-process);
+	display: block;
+	width: 60px;
+	padding: 8px 0px 7px;
+	border-radius: 100px;
+	margin: 0px auto 12px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 25px;
+	text-align: center;
+	font-family: 'HK Nova';
+	background-color: #5E5E5E;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li p.desc {
+	font-size: 17px;
+	line-height: 30px;
+	margin-top: 15px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li .btn_post_confirm {
+	margin-top: 25px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li .btn_post_confirm a {
+	display: inline-block;
+	padding: 5px 21px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 30px;
+	border: 1px solid #444444;
+	box-sizing: border-box;
+	border-radius: 100px;
+}
+.service_content.welstorymall_qualifying ol.get_permission_process li .btn_post_confirm a:after {
+	position: relative;
+	top: -1px;
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 11px;
+	vertical-align: middle;
+	margin-left: 8px;
+	background: url(../images/template/bullet_more.png) no-repeat left top;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide {
+	padding: 45px 55px;
+	border: 5px solid #ECECEC;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide h4 {
+	font-size: 20px;
+	line-height: 35px;
+	margin-bottom: 25px;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide h4 strong {
+	font-weight: bold;
+	color: #5262AD;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide ul {
+	padding: 20px;
+	border-radius: 3px;
+	background-color: #F2F2F2;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide ul li {
+	position: relative;
+	padding-left: 14px;
+	line-height: 30px;
+	color: #444444;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide ul li:before {
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	background-color: #A8A8A8;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide .btn_set {
+	margin-top: 30px;
+	text-align: center;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide .btn_set a {
+	display: inline-block;
+	width: 250px;
+	padding: 17px 0px;
+	margin: 0px 6px;
+	border-radius: 100px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	color: white;
+	background-color: #1B9C9E;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide .btn_set a:after {
+	position: relative;
+	top: -1px;
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 12px;
+	vertical-align: middle;
+	margin-left: 10px;
+	background: url(../images/template/bullet_arrow_w.png) no-repeat left top;
+}
+.service_content.welstorymall_qualifying .ask_permission_guide .btn_set a.dark {
+	background-color: #717173;
+}
+.service_content.welstorymall_qualifying ul.welstorymall_note {
+	margin-top: 30px;
+}
+.service_content.welstorymall_qualifying ul.welstorymall_note li {
+	font-size: 15px;
+	line-height: 22px;
+	color: #444444;
+	margin-top: 9px;
+}
+.service_content.welstorymall_qualifying ul.welstorymall_note li:first-child {
+	margin-top: 0px;
+}
+.service_content.welstorymall_qualifying ul.welstorymall_note li img.ico {
+	position: relative;
+	top: -1px;
+	margin-right: 10px;
+}
+
+
+/* 해상도 1440 이하 일 때 */
+@media all and (max-width: 1440px) {
+	/* 계약입주서비스 공통
+	**************************************************************/
+	/* 계약 입주 컨텐츠 */
+	.service_content {
+		width: 1200px;
+	}
+	
+	/* 분양대금조회
+	**************************************************************/
+	/* 분양대금납부 서비스 이용 안내 */
+	.service_content .regist_after_service {
+		position: relative;
+		padding: 33px 35px 30px;
+	}
+	.service_content .regist_after_service a.btn_regist {
+		top: 25px;
+		right: 35px;
+	}
+	.service_content .contract_product_payment .cpp_content {
+		padding: 60px 40px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_current .calculation img.ico.minus {
+		left: 330px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_current .calculation img.ico.equal {
+		right: 330px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li {
+		padding: 0px 40px 0px 160px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_guide ul.guide_info li .ico {
+		left: 60px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_history,
+	.service_content .contract_product_payment .cpp_content .payment_guide {
+		margin-top: -20px;
+	}
+	.service_content .contract_product_payment .cpp_content .payment_history table tbody,
+	.service_content .contract_product_payment .cpp_content .payment_history table tfoot {
+		font-size: 13px;
+	}
+	
+	/* 입주안내문 다운로드 */
+	.service_content.occupancy_guide {
+		width: 1200px;
+	}
+	.service_content.occupancy_guide ul.og_list li {
+		width: 277px;
+		margin: 37px 0px 0px 27px;
+	}
+	.service_content.occupancy_guide ul.og_list li p {
+		padding: 0px 25px;
+	}
+
+	/* A/S 신청 및 조회 */
+	.service_content.as_guide ul.contact_us li {
+		padding: 70px 0px 0px 210px;
+	}
+	.service_content.as_guide ul.contact_us li.cs_center,
+	.service_content.as_guide ul.contact_us li.security {
+		background-position: 75px 119px;
+	}
+
+	
+	/* 헤스티아 서비스
+	**************************************************************/
+	/* 헤스티아 특권&혜택 */
+	.service_content.hestia_benefit .service_brand {
+		margin-left: 538px;
+	}
+	.service_content.hestia_benefit .chatter {
+		margin: -220px 0px 0px 0px;
+	}
+	
+	/* 헤스티아 라운지 */
+	.service_content.hestia_lounge .hl_wrap {
+		padding-left: 706px;
+	}
+	.service_content.hestia_lounge .hl_wrap:after {
+		width: 6px;
+		right: -6px;
+	}
+
+	/* 헤스티아 매니저 */
+	.service_content.hestia_manager {
+		padding-left: 0px;
+	}
+
+	/* 서비스 소개 */
+	.service_content.hestia_intro {
+		position: relative;
+		width: 100%;
+		padding: 70px 0px 365px;
+		text-align: center;
+	}
+	.service_content.hestia_intro:after {
+		position: absolute;
+		z-index: 1;
+		bottom: 0px;
+		left: 0px;
+		content: '';
+		display: block;
+		width: 100%;
+		height: 525px;
+		background: #F2F2F2 url(../images/service/logo_hestia.png) no-repeat center 260px;
+	}
+	.service_content.hestia_intro h2 {
+		font-size: 38px;
+		line-height: 56px;
+		margin-bottom: 20px;
+	}
+	.service_content.hestia_intro p.intro_guide {
+		font-size: 17px;
+		line-height: 30px;
+		margin-bottom: 60px;
+	}
+	.service_content.hestia_intro ul.service {
+		width: 972px;
+		margin: 0px auto;
+		overflow: hidden;
+	}
+	.service_content.hestia_intro ul.service li {
+		float: left;
+		margin-left: 113px;
+	}
+	.service_content.hestia_intro ul.service li:first-child {
+		margin-left: 0px;
+	}
+	.service_content.hestia_intro ul.photo {
+		width: 1200px;
+	}
+	.service_content.hestia_intro ul.photo li {
+		width: 590px;
+		margin-left: 20px;
+	}
+
+	/* 래미안 생활 가이드
+	**************************************************************/
+	/* 리빙 가이드 */
+	.living_guide {
+		position: relative;
+		height: 470px;
+		padding-left: 712px;
+		background-position: -240px top;
+	}
+	.living_guide .photo {
+		left: 248px;
+	}
+
+	/* 내 집 손보기 */
+	ul.care_my_house li {
+		float: left;
+		margin: 50px 0px 0px 30px;
+	}
+	ul.care_my_house li a {
+		width: 380px;
+		height: 450px;
+	}
+	ul.care_my_house li a figure .photo {
+		width: 339px;
+		height: 217px;
+	}
+	ul.care_my_house li a figure .photo img {
+		width: 339px;
+		height: 217px;
+	}
+
+	/* Safety Label */
+	dl.about_safety_label {
+		padding: 40px 10px 40px 210px;
+		background: #F1F4F4 url(../images/service/safety_label/ico_safety_label.png) no-repeat 50px 45px;
+	}
+	ul.safety_label {
+		overflow: hidden;
+		padding-top: 36px;
+	}
+	ul.safety_label li {
+		position: relative;
+		float: left;
+		width: 588px;
+		height: 300px;
+		padding: 40px 30px 90px 322px;
+		box-sizing: border-box;
+		margin: 24px 0px 0px 24px;
+	}
+	ul.safety_label li:nth-child(2n-1) {
+		margin-left: 0px;
+	}
+	ul.safety_label li:after {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 1;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		border: 1px solid #C7C7C7;
+		box-sizing: border-box;
+	}
+	ul.safety_label li .photo {
+		width: 282px;
+		overflow: hidden;
+	}
+	ul.safety_label li p.condition {
+		margin-bottom: 15px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	ul.safety_label li p.condition img.ico {
+		position: relative;
+		top: -1px;
+		margin-right: 5px;
+	}
+	ul.safety_label li p.summary {
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 41px;
+		margin-bottom: 6px;
+	}
+	ul.safety_label li p.desc {
+		color: #444444;
+	}
+	ul.safety_label li p.label {
+		position: absolute;
+		bottom: 40px;
+		left: 322px;
+		line-height: 1;
+	}
+	.service_content.hestia_lounge .hl_wrap p {
+		width:80%
+	}
+
+}

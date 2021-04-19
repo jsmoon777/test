@@ -1,0 +1,801 @@
+@charset 'euc-kr';
+
+/* Header */
+.down {
+  background-color:#fff;
+  -webkit-transition-duration:0.4s;
+  -webkit-transition-timing-function:ease;
+  transition-duration:0.4s;
+  transition-timing-function:ease;
+  border-bottom:1px solid #000;
+}
+/*
+#header_wrap {
+	position:fixed;
+	top:0;
+	z-index: 9999;
+	width: 100%;
+	height: 100px;
+	background-color:pink;
+	transition: 0.2s ease top;
+	font-family: '210 옴니고딕 020';
+	-webkit-transition-duration:0.4s;
+	-webkit-transition-timing-function:ease;
+	transition-duration:0.4s;
+	transition-timing-function:ease;
+}
+header#header {
+	position: relative;
+	z-index: 2;
+	width: 750px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin: 0px auto;
+	background:rgba(0,0,0,0.00);
+}
+
+
+
+header#header nav #gnb {
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+}
+header#header nav #gnb > ul {
+	position:relative;
+	width:750px;
+	overflow: hidden;
+	text-align:center;
+	background-color:red;
+	height:100px;
+	line-height:100px;
+	margin: 0 auto;
+}
+header#header nav#gnb > ul > li {
+	float: left;
+	width:100px;
+}
+header#header nav#gnb > ul > li:nth-child(4){
+	width:150px;
+}
+
+
+header#header nav#gnb > ul > li:nth-child(4) > a.active {
+	border-bottom:0px;
+}
+
+header#header nav#gnb > ul > li > a {
+	display: inline-block;
+	padding: 6px 0px 31px;
+	font-size: 18px;
+	line-height: 27px;
+	color: #fff;
+}
+header#header nav#gnb > ul > li:nth-child(2) > a,
+header#header nav#gnb > ul > li:nth-child(4) > a {
+	position: relative;
+	left: 9px;
+}
+header#header nav#gnb > ul > li > a.active {
+	color:pinks;
+
+}
+header#header nav#gnb > ul > li > ul {
+	display: none;
+	
+}
+header#header nav#gnb > ul > li > ul > li {
+	line-height: 1;
+}
+header#header nav#gnb > ul > li > ul > li > a {
+	position: relative;
+	color: white;
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: 500;
+}
+header#header nav#gnb > ul > li > ul > li > a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -3px;
+	left: 0px;
+	width: 0%;
+	height: 2px;
+	background-color: #68C8C6;
+	transition: 0.4s ease width;
+}
+header#header nav#gnb > ul > li > ul > li > a:hover:after,
+header#header nav#gnb > ul > li > ul > li > a:focus:after {
+	width: 100%;
+	transition: 0.4s ease width;
+}
+header#header nav#gnb .bar_gnb {
+	display: block;
+	position: absolute;
+	width: 0;
+	bottom:0;
+	height:5px;
+	background-color:#fff;
+	transition: 0.4s ease left,0.4s ease width;
+}
+
+header#header .event_promotion {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 122px;
+	left: 50%;
+	width: 248px;
+	height: 300px;
+	margin-left: -124px;
+	line-height: 1;
+	background: url(../images/layout/bg_h_pe.png) no-repeat center 2px;
+}
+header#header .event_promotion img {
+	width: 248px;
+	height: 300px;
+}
+header#header button,
+header#header button img {
+	position: absolute;
+}
+header#header button img {
+	bottom: 0px;
+	left: 0px;
+}
+header#header button.btn_sitemap {
+	top: 35px;
+	left: 0px;
+	width: 28px;
+	height: 24px;
+}
+header#header button.btn_sitemap img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+header#header button.btn_schedule {
+	top: 33px;
+	right: 56px;
+	width: 27px;
+	height: 26px;
+}
+header#header button.btn_mymenu {
+	top: 32px;
+	right: 0px;
+	width: 24px;
+	height: 26px;
+}
+header#header aside.mymenu {
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top:100px;
+	right: 0px;
+	width: 284px;
+	padding: 30px 25px;
+	background-color: white;
+	box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+	outline: 0;
+}
+header#header aside.mymenu h2 {
+	margin-bottom: 20px;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #1B9C9E;
+}
+header#header aside.mymenu .btn_member a.btn {
+	display: inline-block;
+	width: 140px;
+	padding: 13px 0px;
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: white;
+	text-align: center;
+	background-color: #1B9C9E;
+}
+header#header aside.mymenu .btn_member a.btn.join {
+	color: #101010;
+	border: 1px solid #C7C7C7;
+	padding: 12px 0px;
+	background-color: white;
+}
+header#header aside.mymenu .btn_member a.btn.mypage {
+	width: 100%;
+	padding: 16px 0px 15px;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 19px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+header#header aside.mymenu .btn_member a.logout {
+	position: absolute;
+	top: 34px;
+	right: 28px;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+}
+header#header aside.mymenu .member_regist {
+	margin-top: 15px;
+}
+header#header aside.mymenu .member_regist a {
+	position: relative;
+	display: block;
+	padding: 13px 25px;
+	margin-top: 4px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #444444;
+	border-radius: 3px;
+	background-color: #F1F4F4;
+}
+header#header aside.mymenu .member_regist a:after {
+	position: absolute;
+	top: 18px;
+	right: 25px;
+	content: '';
+	display: block;
+	width: 9px;
+	height: 14px;
+	background: url(../images/layout/bullet_member_regist.png) no-repeat left top;
+}
+header#header aside.mymenu .member_regist a:first-child {
+	margin-top: 0px;
+}
+header#header aside.mymenu .login_guide {
+	padding: 24px 0px 1px;
+	margin: 20px -25px 0px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #5E5E5E;
+	border-top: 1px solid #D6D6D6;
+}
+header#header aside.mymenu button.btn_close {
+	position: absolute;
+	top: -57px;
+	right: 0px;
+	width: 28px;
+	height: 28px;
+	background-color: white;
+}
+header#header aside.mymenu button.btn_close img {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+header#header aside.mymenu .quick_link {
+	margin-top: 26px;
+}
+header#header aside.mymenu .quick_link h3 {
+	position: relative;
+	margin-bottom: 11px;
+	font-family: HK Nova;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	color: #444444;
+}
+header#header aside.mymenu .quick_link h3 button.setting {
+	top: 0px;
+	right: 0px;
+	width: 20px;
+	height: 19px;
+}
+header#header aside.mymenu .quick_link h3 button.setting img {
+	width: 20px;
+	height: 19px;
+}
+header#header aside.mymenu .quick_link ul.default {
+	position: relative;
+	overflow: hidden;
+	border-top: 1px solid #C7C7C7;
+}
+header#header aside.mymenu .quick_link ul.default:after {
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 142px;
+	background-color: #C7C7C7;
+}
+header#header aside.mymenu .quick_link ul.default li {
+	float: left;
+	width: 50%;
+	border-bottom: 1px solid #C7C7C7;
+}
+header#header aside.mymenu .quick_link ul.default li a {
+	display: block;
+	padding: 15px 0px 14px;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	color: #5E5E5E;
+}
+header#header aside.mymenu .quick_link ul.custom {
+	overflow: hidden;
+	margin-top: 6px;
+}
+header#header aside.mymenu .quick_link ul.custom li {
+	float: left;
+	width: 140px;
+	margin: 4px 0px 0px 4px;
+}
+header#header aside.mymenu .quick_link ul.custom li:nth-child(2n-1) {
+	margin-left: 0px;
+}
+header#header aside.mymenu .quick_link ul.custom li a {
+	display: block;
+	padding: 10px 0px 9px;
+	border: 1px solid #1B9C9E;
+	box-sizing: border-box;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	color: #1B9C9E;
+}
+header#header aside.mymenu .quick_link .btn_add_link {
+	margin-top: 18px;
+}
+header#header aside.mymenu .quick_link .btn_add_link button {
+	position: relative;
+	width: 100%;
+	border: 1px dashed #C7C7C7;
+	border-radius: 4px;
+	color: #5E5E5E;
+	font-weight: 500;
+	font-size: 14px;
+	padding: 12px 0px 10px;
+}
+header#header aside.mymenu .quick_link .btn_add_link button img.ico {
+	position: relative;
+	bottom: 1px;
+	margin-right: 12px;
+}
+#header_wrap .bg_gnb {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	top: 100px;
+	left: 0px;
+	width: 100%;
+	height: 370px;
+	background-color:#000;
+	box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+}
+*/
+
+/* 퀵 링크 추가 */
+table.add_quick_link {
+	width: 500px;
+	margin-top: -10px;
+}
+table.add_quick_link tbody tr th,
+table.add_quick_link tbody tr td {
+	padding-top: 10px;
+}
+table.add_quick_link tbody tr th[scope="row"] {
+	text-align: left;
+	width: 55px;
+}
+table.add_quick_link tbody tr td input {
+	width: 429px;
+}
+
+/* 퀵 링크 추가 */
+.settting_quick_link {
+	width: 620px;
+	padding: 3px 20px;
+	border: 1px solid #C7C7C7;
+	box-sizing: border-box;
+	border-radius: 3px;
+}
+.settting_quick_link table {
+	table-layout: fixed;
+}
+.settting_quick_link table tr th[scope="row"],
+.settting_quick_link table tr td {
+	padding: 16px 0px;
+	text-align: left;
+	border-top: 1px solid #C7C7C7;
+}
+.settting_quick_link table tr:first-child th[scope="row"],
+.settting_quick_link table tr:first-child td {
+	border-top-width: 0px;
+}
+.settting_quick_link table tr th[scope="row"] {
+	width: 190px;
+}
+.settting_quick_link table tr td {
+	max-width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #5262AD;
+}
+.settting_quick_link table tr td.empty {
+	padding: 78px 0px 79px;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: #888888;
+}
+
+
+/* Container */
+#container {
+	min-height: 600px;
+}
+
+/* Contents */
+section#contents {
+	position: relative;
+	width: 1440px;
+	padding: 80px 0px 150px;
+	margin: 0px auto;
+}
+section#contents.extend {
+	width: 100%;
+	padding-bottom: 0px;
+}
+section#contents > h1 {
+	margin-bottom: 60px;
+	text-align: center;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 50px;
+}
+section#contents > p.intro_guide {
+	font-size: 18px;
+	text-align: center;
+	line-height: 30px;
+	margin: -35px 0px 50px;
+}
+
+/* Sitemap */
+#sitemap {
+	display: none;
+	position: fixed;
+	z-index: 99;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 60px 0px;
+	box-sizing: border-box;
+	overflow: auto;
+	color: white;
+	background-color: #333333;
+	outline: 0;
+}
+#sitemap a {
+	color: white;
+}
+#sitemap h2 {
+	text-indent: -9999px;
+	overflow: hidden;
+	height: 2px;
+	line-height: 1;
+	margin-top: -2px;
+}
+#sitemap nav.site_menu,
+#sitemap nav.raemian_sns {
+	width: 1440px;
+	margin: 0px auto;
+}
+#sitemap nav.site_menu {
+	padding-bottom: 58px;
+	background: url(../images/layout/bg_sitemap.png) no-repeat right bottom;
+}
+#sitemap nav.site_menu ul li {
+	line-height: 0;
+}
+#sitemap nav.site_menu ul li a {
+	position: relative;
+}
+#sitemap nav.site_menu ul li a:hover,
+#sitemap nav.site_menu ul li a:focus {
+	color: #2DDCDE;
+}
+#sitemap nav.site_menu > ul {
+	overflow: hidden;
+}
+#sitemap nav.site_menu > ul > li {
+	float: left;
+	padding-right: 100px;
+}
+#sitemap nav.site_menu > ul > li:nth-child(7) {
+	padding-right: 0px;
+	height: 350px;
+}
+#sitemap nav.site_menu > ul > li > a {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+}
+#sitemap nav.site_menu > ul > li > ul {
+	margin-top: 15px;
+}
+#sitemap nav.site_menu > ul > li > ul > li > a {
+	font-weight: 500;
+	font-size: 16px;
+	color: #A8A8A8;
+	line-height: 38px;
+}
+#sitemap nav.raemian_sns {
+	text-align: right;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+#sitemap nav.raemian_sns h3,
+#sitemap nav.raemian_sns ul,
+#sitemap nav.raemian_sns ul li {
+	display: inline-block;
+	vertical-align: middle;
+}
+#sitemap nav.raemian_sns h3 {
+	font-size: 20px;
+	line-height: 1;
+	padding-right: 8px;
+}
+#sitemap nav.raemian_sns ul li {
+	padding-left: 16px;
+}
+#sitemap button.btn_close {
+	position: fixed;
+	z-index: 99;
+	top: 0px;
+	left: 0px;
+	width: 28px;
+	height: 28px;
+	margin-top: -2px;
+	background-color: white;
+}
+#sitemap button.btn_close img {
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+
+/* Modal BG */
+#bg_modal {
+	display: none;
+	position: fixed;
+	z-index: 98;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+}
+#bg_modal.gnb {
+	display: block;
+	z-index: 9;
+	opacity: 0.8;
+}
+#bg_modal.sitemap {
+	display: block;
+	background: rgba(0, 0, 0, 0);
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+/* 단지검색 */
+a.btn_quick_search {
+	position: fixed;
+	z-index: 8;
+	top: 180px;
+	right: 0px;
+	opacity: 0;
+}
+
+/* Top 버튼 */
+button.btn_top {
+	display: none;
+	position: fixed;
+	z-index: 8;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+}
+button.btn_top img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 60px;
+	height: 60px;
+}
+
+/* Footer */
+#footer_wrap {
+	background-color: #333333;
+}
+footer#footer {
+	position: relative;
+	width: 1440px;
+	padding: 35px 0px 30px;
+	margin: 0px auto;
+	color: white;
+}
+footer#footer a {
+	color: white;
+}
+footer#footer h2 {
+	line-height: 1;
+	font-size: 1px;
+	margin-bottom: 18px;
+}
+footer#footer ul.foot_menu {
+	position: absolute;
+	top: 38px;
+	right: 0px;
+	overflow: hidden;
+}
+footer#footer ul.foot_menu li {
+	float: left;
+	line-height: 0;
+	padding-left: 30px;
+	background: url(../images/layout/bullet_f_menu.png) no-repeat 13px center;
+}
+footer#footer ul.foot_menu li:first-child {
+	padding-left: 0px;
+	background: none;
+}
+footer#footer ul.foot_menu li a {
+	font-weight: 400;
+	line-height: 24px;
+	color: #D6D6D6;
+}
+footer#footer ul.foot_menu li a strong {
+	font-weight: bold;
+	color: white;
+}
+footer#footer ul.foot_menu li a.cscenter strong {
+	padding-left: 5px;
+}
+footer#footer ul.sns {
+	position: absolute;
+	top: 85px;
+	right: 0px;
+	text-align: right;
+	line-height: 1;
+}
+footer#footer ul.sns li {
+	display: inline-block;
+	margin-left: 21px;
+}
+footer#footer p.company_info,
+footer#footer p.warning {
+	font-size: 14px;
+	color: #888888;
+	letter-spacing: 0px;
+}
+footer#footer p.company_info {
+	margin-right: 13px;
+	margin-top: 4px;
+}
+footer#footer p.company_info b {
+	font-weight: 300;
+	padding-left: 10px;
+}
+footer#footer p.company_info b:first-child {
+	padding-left: 0px;
+}
+footer#footer p.copyright {
+	margin-top: 9px;
+	font-size: 13px;
+	line-height: 16px;
+	color: #888888;
+	letter-spacing: 0px;
+}
+
+/* 수상 목록 */
+aside#foot_award_list {
+	padding: 17px 0px 18px;
+	border-top: 1px solid rgba(255,255,255,0.2)
+}
+aside#foot_award_list ul {
+	overflow: hidden;
+	width: 1440px;
+	margin: 0px auto;
+}
+aside#foot_award_list ul li {
+	float: left;
+	margin-left: 55px;
+	color: white;
+}
+aside#foot_award_list ul li:first-child {
+	margin-left: 0px;
+}
+aside#foot_award_list ul li a {
+	color: white;
+}
+aside#foot_award_list ul li span.txt {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+	font-size: 12px;
+	line-height: 17px;
+	font-weight: 400;
+}
+
+/* 해상도 1440 이하 일 때 */
+@media all and (max-width: 1440px) {
+	/* 넓이 변경 */
+	header#header,footer#footer,aside#foot_award_list ul,section#contents {
+		width: 1200px;
+	}
+	/* Header */
+	header#header nav#gnb {
+		left: 68px;
+	}
+	header#header nav#gnb > ul > li:nth-child(1) {
+		width: 92px;
+	}
+	header#header nav#gnb > ul > li:nth-child(2) {
+		width: 125px;
+	}
+	header#header nav#gnb > ul > li:nth-child(3) {
+		width: 125px;
+	}
+	header#header nav#gnb > ul > li:nth-child(4) {
+		width: 120px;
+		margin-right: 186px;
+	}
+	header#header nav#gnb > ul > li:nth-child(5) {
+		width: 127px;
+	}
+	header#header nav#gnb > ul > li:nth-child(6) {
+		width: 162px;
+	}
+	header#header nav#gnb > ul > li:nth-child(7) {
+		width: 100px;
+	}
+	header#header nav#gnb > ul > li:nth-child(3) > a {
+		position: relative;
+		left: -12px;
+	}
+	#header_wrap .bg_gnb {
+		height: 330px;
+	}
+	
+	/* Sitemap */
+	#sitemap nav.site_menu,
+	#sitemap nav.raemian_sns {
+		width: 1200px;
+	}
+	#sitemap nav.site_menu > ul > li {
+		padding-right: 72px;
+	}
+
+	/* Footer */
+	footer#footer {
+		padding-bottom: 32px;
+	}
+
+	/* 수상 목록 */
+	aside#foot_award_list ul li {
+		margin-left: 20px;
+		color: #A8A8A8;
+	}
+	aside#foot_award_list ul li span.txt {
+		margin-left: 6px;
+		letter-spacing: -0.5px;
+	}
+}

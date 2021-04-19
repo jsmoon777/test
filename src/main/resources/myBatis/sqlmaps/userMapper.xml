@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="User">
+	<select id="Login"
+  		parameterType = "hashmap"
+      resultType="com.green.user.vo.UserVo" >
+    SELECT    USER_ID, USER_PW, USER_NAME, USER_BIRTH, USER_EMAIL, USER_PHONE, GENDER
+    	, USER_OADDRESS, USER_ADDRESS, USER_DTADDRESS, REGDATE, NICKNAME, LOCA_PROV
+     FROM     USER_TBL
+     WHERE	  USER_ID = #{user_id}
+  </select>
+  
+  <insert id="Register" parameterType = "hashmap">
+  	INSERT INTO USER_TBL( USER_ID, USER_PW, USER_NAME, USER_BIRTH, USER_EMAIL, USER_PHONE, GENDER
+    	, USER_OADDRESS, USER_ADDRESS, USER_DTADDRESS, NICKNAME, LOCA_PROV)
+	VALUES( #{user_id}, #{user_pw}, #{user_name}, #{user_birth}, #{user_email}, #{user_phone}, #{gender}
+    	, #{user_oaddress}, #{user_address}, #{user_dtaddress}, #{nickname}, #{loca_prov})
+	
+  </insert>
+  
+  <!-- 아이디 중복 검사 -->
+  <select id="checkOverId"
+      resultType="int" >
+    SELECT    COUNT(user_id)
+     FROM     USER_TBL
+     WHERE	  USER_ID = #{user_id}
+  </select>
+  
+  <!-- 닉네임 중복 검사 -->
+  <select id="checkOverNickname"
+      resultType="int" >
+    SELECT    COUNT(nickname)
+     FROM     USER_TBL
+     WHERE	  NICKNAME = #{nickname}
+  </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+

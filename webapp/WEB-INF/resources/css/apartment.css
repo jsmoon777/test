@@ -1,0 +1,147 @@
+@charset 'euc-kr';
+
+/* */
+
+/*아카데미*/
+#sale_container {  margin: 0 auto; max-width: 1440px;  width: 100%; display: block;}
+#sale_container .subtop_area { width: 1304px; padding: 36px 70px 35px; background: #F9F9F9; margin:0 auto; text-align: center;  display:table}
+#sale_container span.selectbox_ui b.selected_txt { text-align:left;}
+.sale_list01 {display:inline-block;}
+.sale_list01 li {position:relative; width:450px; float:left; margin:0 0 80px 45px; padding-bottom:294px; background: #FFFFFF; }
+.sale_list01 li:nth-child(1), 
+.sale_list01 li:nth-child(4),
+.sale_list01 li:nth-child(7){margin-left:0; }
+
+.sale_list01 li:nth-child(7), 
+.sale_list01 li:nth-child(8),
+.sale_list01 li:nth-child(9){margin-bottom:27px; }
+
+div.noseachImg { width: 160px; height: 207px; font-weight: 300; font-size: 18px; text-align: center; color: #888888; margin: 100px auto;}
+.times_tb.news { border-bottom:none;}
+.nodataImg > img, .noseachImg > img { margin-bottom: 30px }
+
+
+
+#sale_container .search {    margin-top: 18px;}
+.zone_list li { padding:12px 0 ; float:left; background: url(../images/apartment/bar.png) no-repeat 100% 50%;}
+.zone_list li:last-child {  background: none; }
+.zone_list li a { color: #444444; font-weight: 500; font-size: 16px; line-height: 24px; text-align: center; padding: 0 34px; display: block;}
+.zone_list li a > span.count { color:#888; font-weight: 500; font-size: 15px; display:block; line-height: 19px;}
+.zone_list li:hover,
+.zone_list li.on {padding:0 4px}
+.zone_list li:hover a,
+.zone_list li.on a { padding:12px 30px; background: #907E72;  display: inline-block; box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1); color:#fff;  border-radius: 100px;}
+.zone_list li:hover a > span.count,
+.zone_list li.on a > span.count  { color: #FFFFFF; opacity: 0.7;}
+
+.sale_list01 .saleimg { width:450px; height:345px; overflow:hidden; position:relative  }
+.sale_list01 .saleimg > img { width:100%; height:100%; }
+
+.parcel_info { background: #fff; padding:40px; position:absolute; bottom:0px; right:0; margin-top:-50px; margin-left:25px; box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);}
+.parcel_info .sale_info p.notice {position: absolute; z-index: 2; top: -55px; left: 0px; width: 376px; padding: 11px 0px 12px; text-align: center;  white-space: nowrap; overflow: hidden; border-radius: 3px; font-weight: 500; font-size: 15px; line-height: 22px; color: white; border-width: 0px 12px; border-style: solid; border-color: transparent; background-color: rgba(16,16,16,0.6);}
+.parcel_info .sale_info p.dating { font-weight: 500; font-size: 16px; line-height: 24px; color: #1B9C9E;}
+.parcel_ing .parcel_info .sale_info p.dating {color: #5262AD;}
+.parcel_info .sale_info p.dating strong { font-family: 'HK Nova'; font-weight: 300; font-size: 16px; line-height: 20px; color: #101010; margin:0 7px 0 0 }
+.parcel_info .zzim {   position: absolute;  right: 20px; top: 25px; padding:13px; background: url(../images/apartment/heart.png) no-repeat 0 0;}
+.parcel_info .zzim.in { position: absolute;  right: 20px; top: 25px; padding:13px; background: url(../images/apartment/heart_on.png) no-repeat 0 0;}
+.parcel_info .zzim:focus,
+.parcel_info .zzim.in:focus { border:none !important;}
+
+
+/* .parcel_info .sale_info .saleName { font-weight: 500; font-size: 26px; line-height: 38px; color: #101010; width: 350px; display:inline-block; overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+.parcel_info .sale_info .saleName:hover {border-bottom:1px solid #101010;} */
+
+.parcel_info .sale_info a p.titC {   font-weight: 500; font-size: 26px; margin-top: 6px; color: #101010; overflow: hidden; line-height:38px; max-height:76px; }
+.parcel_info .sale_info a:focus p.titC b,
+.parcel_info .sale_info a:hover p.titC b {	border-bottom: 1px solid #101010;}
+
+
+
+.perceling_Btn { width: 70px; height: 70px; background: #5262AD; font-weight: bold; font-size: 15px; line-height: 69px; position: absolute; text-align: center; color: #FFFFFF; top: 0; right: 0;  }
+.perceltobe_Btn  { width: 28px; height: 40px; background: #1B9C9E; font-weight: bold; font-size: 15px; line-height: 23px; position: absolute; text-align: center; color: #FFFFFF; top: 0; right: 0; padding: 15px 21px; }
+.perceling_Btn02 { width: 52px; height: 40px; background: #1B9C9E; font-weight: bold; font-size: 15px; line-height: 23px; position: absolute; text-align: center; color: #FFFFFF; top: 0; right: 0; padding: 15px 9px; }
+.parcel_title { width:380px; height:45px; line-height:44px; background: url(../images/apartment/bg01.png) repeat 0 0; text-align:center; border-radius: 3px; font-weight: 500; left: 7%; position: absolute; top: 240px; padding:0 10px; } 
+.parcel_title p { overflow:hidden;white-space:nowrap;text-overflow:ellipsis; font-size: 15px; color: #FFFFFF; }
+dl.parcel_detail { margin-top:18px;}
+dl.parcel_detail:after {content:''; display:block; clear:left; height:25px; }
+dl.parcel_detail dt {font-weight: 500; font-size: 16px; line-height: 30px; color: #101010; float:left; width:45px;}
+dl.parcel_detail dd {font-weight: 300; font-size: 16px; line-height: 30px; color: #444444; float:left; width:300px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis}
+.sale_info .btn_arae a { width:164px; line-height: 50px;  height: 50px; background: none; font-weight: 500;font-size: 16px; padding:0; text-align:center}
+.sale_info .btn_arae a.btnwhite {margin-right:10px;}
+.sale_info .btn_arae a.btnwhite:hover {background: #444444;color:#fff }
+.sale_info .btn_arae a.btnblue:hover {background: #1B9C9E;color:#fff } 
+
+
+/*팝업*/
+#concern_pop .popuser {color:#1B9C9E}
+.popup_info_agree h4 {font-weight: 500; font-size: 20px; margin:0 0 20px; line-height: 30px; color: #101010;}
+#concern_pop .check_area {  display: flex; width: 24%; margin:25px auto 41px}
+#concern_pop .check_area li { float:left;  margin-left:20px; font-weight: 300; font-size: 17px; line-height: 25px; color: #101010;}
+#concern_pop .check_area li.on { font-weight: 500; font-size: 17px; line-height: 25px; color: #1B9C9E;}
+#concern_pop .check_area li:first-child { margin-left:0}
+#concern_pop fieldset.mct_form p.field a.btn_confirm {  width: 128px; padding: 13px 0px; vertical-align: middle; font-size:16px;}
+#concern_pop  span.basic_select b.selected_txt {
+   
+    font-size: 16px;
+}
+
+
+.check_area02 { border:1px solid red; display:inline-block}
+.immtxt  {font-weight: 500; font-size: 16px; line-height: 24px; color: #1B9C9E;}
+#concern_pop .immtxt  { margin:0 20px 0 0; float:left}
+dl.subscrip { }
+dl.subscrip dt {float:left; margin: 0 20px 0 0; height: 67px; }
+dl.subscrip ul { display:inline-block;}
+dl.subscrip ul li { float:left; width:124px}
+dl.subscrip ul li:first-child {padding-left:10px;}
+dl.subscrip ul.grou li:first-child {background: url(../images/apartment/gard01.png) no-repeat 0 0; padding-left:10px; }
+dl.subscrip ul.grou li:last-child {background: url(../images/apartment/gard02.png) no-repeat 100% 0; padding-right:10px; width: 95px;} 
+#concern_pop table td > ul li { float:left; margin-right:25px}
+.blue_guide {font-weight: 500; font-size: 16px; color: #1B9C9E; background: url(../images/times/icon06.png) no-repeat 0 center; padding:0 0 0 14px; display: inline-block; margin: 10px 0 0;}
+
+
+
+/* 팝업 지도보기*/
+.layer_popup .app_cal .pop_mapAip { width:100%; height:500px; overflow:hidden; background-color:#E7E7E7;}
+
+/*데이터 없을때*/
+.salenoDataArea { border-top:4px solid #101010; padding: 130px 0 200px }
+.salenoDataArea .nodataImg { width:154px; height:207px; font-weight: 300; font-size: 18px; text-align: center; color: #888888; margin: 0 auto;}
+.salenoDataArea .noseachImg {  width:160px; height:207px; font-weight: 300; font-size: 18px; text-align: center; color: #888888; margin: 0 auto;}
+.salenoDataArea .nodataImg > img, 
+.salenoDataArea .noseachImg > img { margin-bottom:30px; }
+
+
+/* 입주단지 */
+#sale_container .times_tb.moving { margin-bottom:50px; border-bottom:none;}
+#sale_container .times_tb.moving .basicV th { height: 72px; line-height:71px; font-weight: 500; font-size: 17px; line-height: 25px; color: #101010;} 
+#sale_container .times_tb.moving .basicV td.title {font-weight: 500; font-size: 25px; color: #5E5E5E ;}
+#sale_container .times_tb.moving .basicV  td { font-weight: 300; height:111px; font-size: 16px; color: #5E5E5E;}
+#sale_container .times_tb.moving .basicV tr.on > td,
+#sale_container .times_tb.moving .basicV tr.on > td a {  color:#1B9C9E; }
+#sale_container .times_tb.moving .basicV td > a {font-weight: 500; font-size: 25px; color: #5E5E5E;}
+#sale_container .times_tb.moving .basicV tr.on td > span.moving {padding:6px 15px; color:#fff; background: #1B9C9E; border-radius: 100px; font-size: 16px; vertical-align: text-bottom; margin-left:15px }
+#sale_container p.movinginfo_note { margin:-30px auto 23px; padding-left:30px; font-size:15px; color: #444444; line-height:25px; box-sizing:border-box; background:url(../images/template/ico_explain.png) no-repeat left 3px; }
+
+
+
+
+
+
+/* 해상도 1440 이하 일 때 200626 */
+
+@media all and (max-width: 1440px) {
+	/* 넓이 변경 */
+	#sale_container .subtop_area { width:1060px; }
+
+	.sale_list01 li { width:380px; margin-left:30px;}
+	.sale_list01 .saleimg { width:380px; height:290px; }
+	.parcel_title {width:auto; left: 16%; top:180px; }
+	.parcel_info { width: 280px;}
+	.parcel_info .sale_info p.notice { width: 316px; }
+	.parcel_info .sale_info dl.parcel_detail dd {width:235px;}
+	.parcel_info .sale_info .btn_arae a { width: 134px; } 
+
+
+	#sale_container p.movinginfo_note {width:1200px;}
+}

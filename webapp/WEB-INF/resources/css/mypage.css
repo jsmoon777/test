@@ -1,0 +1,1657 @@
+@charset 'euc-kr';
+
+/* 마이래미안 공통
+**************************************************************/
+/* 마이래미안 헤더 */
+#mypage_header {
+	color: white;
+	text-align: center;
+	padding: 80px 0px 190px;
+	background: #006466 url(../images/mypage/bg_mypage_header.png) no-repeat center center;
+}
+#mypage_header h2 {
+	font-size: 45px;
+	line-height: 50px;
+	margin-bottom: 25px;
+}
+#mypage_header p.intro {
+	font-size: 18px;
+	line-height: 30px;
+}
+
+/* 마이래미안 컨텐츠 */
+#mypage_contents {
+	width: 1440px;
+	margin: -130px auto 0px;
+	padding-bottom: 100px;
+	background-color: white;
+}
+
+/* 마이래미안 래미안타임즈 */
+#mypage_times_wrap {
+	padding: 100px 0px 150px;
+	background-color: #F1F4F4;
+}
+#mypage_times {
+	position: relative;
+	width: 1440px;
+	margin: 0px auto;
+}
+#mypage_times h3 {
+	font-size: 37px;
+	line-height: 50px;
+	margin-bottom: 40px;
+}
+#mypage_times ul.times_list {
+	overflow: hidden;
+	margin: -50px -60px 0px;
+	padding: 50px 60px 60px 20px;
+}
+#mypage_times ul.times_list li {
+	position: relative;
+	float: left;
+	width: 330px;
+	margin-left: 40px;
+}
+#mypage_times ul.times_list li a {
+	position: relative;
+	top: 0px;
+	display: block;
+	padding: 40px 0px 37px;
+	box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.2);
+	background-color: white;
+	transition: 0.3s ease top;
+}
+#mypage_times ul.times_list li a.active {
+	position: relative;
+	top: -30px;
+	transition: 0.3s ease top;
+}
+#mypage_times ul.times_list li:nth-child(2n-1) a {
+	color: #5E5E5E;
+}
+#mypage_times ul.times_list li:nth-child(2n) a {
+	color: white;
+}
+#mypage_times ul.times_list li:nth-child(2) a {
+	background-color: #1B9C9E;
+}
+#mypage_times ul.times_list li:nth-child(4) a {
+	background-color: #907E72;
+}
+#mypage_times ul.times_list li a p.category,
+#mypage_times ul.times_list li a p.subject {
+	font-weight: 500;
+	text-align: center;
+}
+#mypage_times ul.times_list li a p.category {
+	font-size: 16px;
+	line-height: 24px;
+}
+#mypage_times ul.times_list li:nth-child(2n-1) a p.category {
+	color: #907E72;
+}
+#mypage_times ul.times_list li a p.subject {
+	margin: 21px 35px 30px;
+	font-size: 28px;
+	line-height: 40px;
+	height: 76px;
+	overflow: hidden;
+}
+#mypage_times ul.times_list li:nth-child(2n-1) a p.subject {
+	color: #212121;
+}
+#mypage_times ul.times_list li a[data-type="thumbnail"] p.cont {
+	padding-left: 30px;
+}
+#mypage_times ul.times_list li a[data-type="thumbnail"] p.cont img {
+	width: 300px;
+	height: auto;
+}
+#mypage_times ul.times_list li a[data-type="text"] p.cont {
+	color: #5E5E5E;
+	padding: 0px 35px;
+}
+#mypage_times ul.times_list li:nth-child(2n) a p.cont {
+	color: white;
+}
+#mypage_times ul.times_list li a p.date {
+	margin-top: 30px;
+	font-family: 'HK Nova';
+}
+#mypage_times ul.times_list li a[data-type="thumbnail"] p.date {
+	padding-left: 30px;
+}
+#mypage_times ul.times_list li a[data-type="text"] p.date {
+	padding-left: 35px;
+}
+#mypage_times ul.times_list li a p.date time {
+	font-size: 15px;
+	line-height: 19px;
+}
+#mypage_times a.btn_more {
+	position: absolute;
+	top: 26px;
+	right: 0px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding-right: 16px;
+	background: url(../images/template/bullet_more.png) no-repeat right 7px;
+}
+
+/* 마이래미안 메인
+**************************************************************/
+/* 현재 회원 상태 */
+.mypage_main .my_condition {
+	position: relative;
+	height: 136px;
+	padding: 62px 80px 62px 256px;
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.15);
+	background-color: white;
+}
+.mypage_main .my_condition h3 {
+	font-weight: normal;
+	font-size: 30px;
+	line-height: 44px;
+	margin-bottom: 8px;
+}
+.mypage_main .my_condition h3 strong {
+	font-weight: bold;
+	color: #1B9C9E;
+}
+.mypage_main .my_condition .ico {
+	position: absolute;
+	top: 62px;
+	left: 80px;
+	width: 136px;
+	height: 136px;
+}
+.mypage_main .my_condition .ico img {
+	width: 136px;
+	height: 136px;
+}
+.mypage_main .my_condition p.regist_info {
+	line-height: 24px;
+	color: #888888;
+	margin-bottom: 32px;
+}
+.mypage_main .my_condition p.btn_info_modify a {
+	display: inline-block;
+	font-size: 17px;
+	line-height: 25px;
+	padding-bottom: 2px;
+}
+.mypage_main .my_condition p.btn_info_modify a:hover,
+.mypage_main .my_condition p.btn_info_modify a:focus {
+	border-bottom: 1px solid #444444;
+}
+.mypage_main .my_condition ul.regist_menu {
+	position: absolute;
+	top: 75px;
+	right: 100px;
+}
+.mypage_main .my_condition ul.regist_menu li {
+	margin-top: 10px;
+}
+.mypage_main .my_condition ul.regist_menu li:first-child {
+	margin-top: 0px;
+}
+.mypage_main .my_condition ul.regist_menu li a.btn_regist {
+	display: inline-block;
+	width: 167px;
+	padding: 12px 0px;
+	margin-right: 10px;
+	border: 1px solid #1B9C9E;
+	box-sizing: border-box;
+	border-radius: 100px;
+	text-align: center;
+	line-height: 24px;
+}
+.mypage_main .my_condition ul.regist_menu li a.btn_regist:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	top: -2px;
+	width: 12px;
+	height: 12px;
+	margin-left: 10px;
+	background: url(../images/mypage/btn_main_regist.png) no-repeat left top;
+}
+.mypage_main .my_condition ul.regist_menu li a.btn_regist.active {
+	color: white;
+	background-color: #1B9C9E;
+}
+.mypage_main .my_condition ul.regist_menu li a.btn_regist.active:after {
+	background-position: left bottom;
+}
+
+/* 계약회원&입주회원 상품 정보 */
+.mypage_main .contract_resident_info {
+	position: relative;
+	padding: 50px 80px;
+	margin: 40px 0px 80px;
+	background: white;
+	box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.15);
+}
+.mypage_main .contract_resident_info + .contract_resident_info {
+	margin-top: -40px;
+}
+.mypage_main .contract_resident_info h3 {
+	position: relative;
+	line-height: 33px;
+	font-size: 22px;
+	padding: 9px 187px 18px 0px;
+	margin-bottom: 40px;
+	border-bottom: 4px solid #101010;
+}
+.mypage_main .contract_resident_info h3 a {
+	display: block;
+}
+.mypage_main .contract_resident_info h3 a.select_product {
+	position: relative;
+	overflow: hidden;
+}
+.mypage_main .contract_resident_info h3 a.select_product.disabled {
+	cursor: default;
+}
+.mypage_main .contract_resident_info h3 a.select_product:after {
+	content: '';
+	display: block;
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 12px;
+	right: 0px;
+	background: url(../images/mypage/bullet_select_product.png) no-repeat left top;
+}
+.mypage_main .contract_resident_info h3 a.select_product.disabled:after {
+	display: none;
+}
+.mypage_main .contract_resident_info h3 a.select_product span.field {
+	display: inline-block;
+	vertical-align: top;
+}
+.mypage_main .contract_resident_info h3 a.select_product span.field.product {
+	position: relative;
+	padding-left: 30px;
+}
+.mypage_main .contract_resident_info h3 a.select_product span.field.product:before {
+	position: absolute;
+	top: 4px;
+	left: 15px;
+	content: '';
+	display: block;
+	width: 1px;
+	height: 25px;
+	background-color: #101010;
+}
+.mypage_main .contract_resident_info h3 a.select_product span.field strong.category {
+	margin-right: 10px;
+	color: #1B9C9E;
+}
+.mypage_main .contract_resident_info h3 a.btn_removal {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	padding: 13px 30px;
+	line-height: 24px;
+	font-size: 16px;
+	color: white;
+	border-radius: 3px;
+	background-color: #444444;
+}
+.mypage_main .contract_resident_info ul.product_list {
+	display: none;
+	position: absolute;
+	top: 110px;
+	left: 80px;
+	z-index: 2;
+	width: 1113px;
+	border: 2px solid #101010;
+	padding: 11px 0px;
+	box-sizing: border-box;
+	box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+.mypage_main .contract_resident_info ul.product_list li {
+	line-height: 0;
+}
+.mypage_main .contract_resident_info ul.product_list li a {
+	display: block;
+	padding: 13px 28px 12px;
+	background-color: white;
+}
+.mypage_main .contract_resident_info ul.product_list li a:hover,
+.mypage_main .contract_resident_info ul.product_list li a:focus {
+	background-color: #F2F2F2;
+}
+.mypage_main .contract_resident_info ul.product_list li a strong {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 24px;
+	border-bottom: 1px solid transparent;
+}
+.mypage_main .contract_resident_info ul.product_list li a strong.product {
+	position: relative;
+	padding-left: 21px;
+}
+.mypage_main .contract_resident_info ul.product_list li a strong.product:after {
+	position: absolute;
+	top: 2px;
+	left: 10px;
+	content: '';
+	display: block;
+	width: 1px;
+	height: 20px;
+	background-color: #C7C7C7;
+}
+.mypage_main .contract_resident_info ul.product_list li a.active strong {
+	border-bottom-color: #101010;
+}
+.mypage_main .contract_resident_info .product_detail:after {
+	content: '';
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 2px;
+	margin-top: -2px;
+}
+.mypage_main .contract_resident_info .product_detail .gallery {
+	float: left;
+	width: 450px;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .photo {
+	width: 450px;
+	height: 345px;
+	overflow: hidden;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .photo img {
+	width: 100%;
+	height: 100%;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .btn_set {
+	overflow: hidden;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .btn_set a {
+	float: left;
+	display: block;
+	width: 50%;
+	padding: 18px 0px;
+	text-align: center;
+	color: white;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .btn_set a:nth-child(1) {
+	background-color: #A8A8A8;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .btn_set a:nth-child(2) {
+	background-color: #717173;
+}
+.mypage_main .contract_resident_info .product_detail .gallery .btn_set a:only-child {
+	width: 100%;
+}
+.mypage_main .contract_resident_info .product_detail .content {
+	float: left;
+	width: 770px;
+	margin-left: 60px;
+}
+.mypage_main .contract_resident_info .product_detail .content p.date {
+	margin: 14px 0px 10px;
+	line-height: 20px;
+}
+.mypage_main .contract_resident_info .product_detail .content p.date time {
+	font-family: 'HK Nova';
+	margin-right: 7px;
+}
+.mypage_main .contract_resident_info .product_detail .content p.date strong {
+	color: #1B9C9E;
+}
+.mypage_main .contract_resident_info .product_detail .content p.name {
+	margin-bottom: 25px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 38px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.menu {
+	display: inline-block;
+	overflow: hidden;
+	padding: 13px 6px;
+	border-radius: 100px;
+	background-color: #907E72;
+	margin-bottom: 17px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.menu li {
+	float: left;
+	line-height: 24px;
+	padding: 0px 29px;
+	border-left: 1px solid rgba(255,255,255,0.5);
+}
+.mypage_main .contract_resident_info .product_detail .content ul.menu li:first-child {
+	border-left-width: 0px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.menu li a {
+	color: white;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.menu li a:hover,
+.mypage_main .contract_resident_info .product_detail .content ul.menu li a:focus {
+	border-bottom: 1px solid white;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.location_length li {
+	line-height: 30px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.location_length li strong.category,
+.mypage_main .contract_resident_info .product_detail .content ul.location_length li span.value {
+	display: inline-block;
+	vertical-align: top;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.location_length li span.value {
+	margin-left: 28px;
+	color: #444444;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule {
+	margin-top: 30px;
+	padding: 36px 50px 40px;
+	border-radius: 3px;
+	background-color: #F2F2F2;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li {
+	position: relative;
+	line-height: 24px;
+	margin-top: 14px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li:first-child {
+	margin-top: 0px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li strong.category,
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li span.value {
+	display: inline-block;
+	vertical-align: top;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li strong.category {
+	width: 140px;
+	color: #444444;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li span.value {
+	position: relative;
+	top: 1px;
+	font-family: 'HK Nova';
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li a.btn_guide {
+	position: absolute;
+	right: 0px;
+	width: 140px;
+	padding: 8px 0px;
+	border: 1px solid #907E72;
+	border-radius: 100px;
+	font-size: 15px;
+	line-height: 22px;
+	color: #907E72;
+	text-align: center;
+	background-color: #F2F2F2;
+	transition: 0.3s ease color,0.3s ease background-color;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li a.btn_guide:hover,
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li a.btn_guide:focus {
+	color: white;
+	background-color: #907E72;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li:first-child a.btn_guide {
+	top: -10px;
+}
+.mypage_main .contract_resident_info .product_detail .content ul.schedule li:last-child a.btn_guide {
+	top: -3px;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way {
+	overflow: hidden;
+	margin-top: 29px;
+	padding: 33px 0px;
+	border-radius: 3px;
+	background-color: #F2F2F2;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way h4,
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul,
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li {
+	float: left;
+	text-align: center;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way h4 {
+	width: 146px;
+	padding-top: 9px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul {
+	width: 610px;
+	padding: 9px 5px 5px;
+	border-left: 1px solid #C7C7C7;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li {
+	position: relative;
+	padding: 0px 40px 0px 45px;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li:last-child {
+	padding-right: 0px;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li:before {
+	content: '';
+	display: block;
+	width: 7px;
+	height: 7px;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+	background: url(../images/mypage/bullet_aaw.png) no-repeat left top;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li:first-child:before {
+	display: none;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li strong.category,
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li span.value {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	color: #444444;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li span.value b.tel {
+	display: block;
+	max-width: 146px;
+	position: relative;
+	top: 1px;
+	font-family: 'HK Nova';
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: #907E72;
+	letter-spacing: 0px;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li span.value a.btn {
+	display: inline-block;
+	padding-right: 12px;
+	color: #907E72;
+	font-weight: bold;
+	background: url(../images/mypage/btn_aaw.png) no-repeat right 8px;
+	border-bottom: 1px solid transparent;
+}
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li span.value a.btn:hover,
+.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li span.value a.btn:focus {
+	border-bottom-color: #907E72;
+}
+.mypage_main .contract_resident_info .product_detail .content p.note {
+	text-align: right;
+	font-size: 14px;
+	line-height: 25px;
+	margin-top: 10px;
+	color: #5E5E5E;
+}
+.mypage_main .contract_resident_info .product_detail .content p.note a {
+	font-weight: bold;
+	color: #5262AD;
+}
+.mypage_main .contract_resident_info .product_detail .content p.note a:hover,
+.mypage_main .contract_resident_info .product_detail .content p.note a:focus {
+	border-bottom: 1px solid #5262AD;
+}
+
+/* 고객센터 */
+.mypage_main ul.mypage_contact_us {
+	margin: 60px 0px 80px;
+	overflow: hidden;
+}
+.mypage_main .tab_content + ul.mypage_contact_us {
+	margin-top: 100px;
+}
+.mypage_main ul.mypage_contact_us li {
+	float: left;
+	width: 50%;
+	height: 260px;
+	padding: 65px 0px 0px 256px;
+	box-sizing: border-box;
+}
+.mypage_main ul.mypage_contact_us li.cs_center {
+	color: white;
+	background: #1B9C9E url(../images/cscenter/ico_common_cscenter.png) no-repeat 109px 99px;
+}
+.mypage_main ul.mypage_contact_us li.inquiry {
+	background: #ECECEC url(../images/cscenter/ico_common_inquiry.png) no-repeat 111px 97px;
+}
+.mypage_main ul.mypage_contact_us li h3 {
+	font-size: 25px;
+	line-height: 32px;
+	margin-bottom: 5px;
+}
+.mypage_main ul.mypage_contact_us li.cs_center h3 {
+	color: white;
+}
+.mypage_main ul.mypage_contact_us li p.guide {
+	font-size: 16px;
+	line-height: 30px;
+}
+.mypage_main ul.mypage_contact_us li p.tel {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 51px;
+	color: #90E9E7;
+}
+.mypage_main ul.mypage_contact_us li.inquiry .btn {
+	margin-top: 20px;
+}
+.mypage_main ul.mypage_contact_us li.inquiry .btn a {
+	display: block;
+	width: 178px;
+	padding: 9px 0px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	line-height: 30px;
+	border: 1px solid #101010;
+	border-radius: 100px;
+	background-color: transparent;
+	transition: 0.3s ease color,0.3s ease background-color;
+}
+.mypage_main ul.mypage_contact_us li.inquiry .btn a:hover,
+.mypage_main ul.mypage_contact_us li.inquiry .btn a:focus {
+	color: white;
+	background-color: #101010;
+}
+
+/* 공사진행현황 */
+.mypage_main h3.tit_construction_progress {
+	font-size: 30px;
+	line-height: 44px;
+	text-align: center;
+	font-weight: normal;
+	color: #006466;
+	margin-bottom: 40px;
+}
+.mypage_main h3.tit_construction_progress strong {
+	font-weight: bold;
+}
+.mypage_main .construction_progress {
+	position: relative;
+	width: 1196px;
+	margin: 0px auto;
+}
+.mypage_main .construction_progress .screenshot {
+	text-align: center;
+	opacity: 0;
+	transition: 0.3s ease opacity;
+}
+.mypage_main .construction_progress .screenshot.load {
+	opacity: 1;
+}
+.mypage_main .construction_progress .screenshot img {
+	max-width: 1196px;
+	max-height: 720px;
+}
+.mypage_main .construction_progress .gallery_list {
+	position: relative;
+	padding: 0px 60px;
+	margin-top: 50px;
+}
+.mypage_main .construction_progress .gallery_list .list_slider,
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides {
+	overflow: hidden;
+	height: 154px;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li {
+	position: relative;
+	float: left;
+	width: 254px;
+	margin-left: 20px;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li:first-child {
+	margin-left: 0px;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li a {
+	display: block;
+	width: 254px;
+	height: 154px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li span.check {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 4px solid #1EBEC0;
+	opacity: 0;
+	background-color: rgba(0, 0, 0, 0);
+	transition: 0.2s ease opacity,0.2s ease background-color;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li span.check img.ico {
+	position: absolute;
+	top: 50px;
+	left: 102px;
+	width: 50px;
+	height: 50px;
+	opacity: 0;
+	transition: 0.2s ease opacity;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li a:hover span.check,
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li a.active span.check,
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li a.active span.check img.ico {
+	opacity: 1;
+}
+.mypage_main .construction_progress .gallery_list .list_slider ul.slides li a.active span.check {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.mypage_main .construction_progress .gallery_list .btn_guide_set button {
+	position: absolute;
+	top: 59px;
+	width: 20px;
+	height: 36px;
+}
+.mypage_main .construction_progress .gallery_list .btn_guide_set button.prev {
+	left: 0px;
+}
+.mypage_main .construction_progress .gallery_list .btn_guide_set button.next {
+	right: 0px;
+}
+.mypage_main .construction_progress .gallery_list .btn_guide_set button img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.mypage_main .construction_progress a.btn_more {
+	position: absolute;
+	top: -73px;
+	right: 0px;
+	display: inline-block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	padding-right: 16px;
+	background: url(../images/template/bullet_more.png) no-repeat right 7px;
+}
+.mypage_main .construction_progress_notice {
+	width: 1076px;
+	margin: 50px auto 0px;
+	padding: 47px 60px 51px;
+	background-color: #F1F4F4;
+}
+.mypage_main .construction_progress_notice h4 {
+	font-size: 22px;
+	line-height: 33px;
+	color: #5262AD;
+	margin-bottom: 16px;
+}
+.mypage_main .construction_progress_notice h4 img.ico {
+	position: relative;
+	top: -2px;
+	margin-right: 15px;
+}
+.mypage_main .construction_progress_notice .content {
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+}
+
+/* 나의관심단지 */
+.mypage_main ul.my_wish_product {
+	padding-bottom: 20px;
+	margin-top: -60px;
+}
+.mypage_main ul.my_wish_product + .paging {
+	margin-top: 40px;
+}
+.mypage_main ul.my_wish_product:after {
+	content: '';
+	display: block;
+	clear: left;
+}
+.mypage_main ul.my_wish_product li {
+	position: relative;
+	float: left;
+	width: 450px;
+	margin: 60px 0px 0px 45px;
+}
+.mypage_main ul.my_wish_product li:nth-child(3n-2) {
+	margin-left: 0px;
+}
+.mypage_main ul.my_wish_product li .inner {
+	position: relative;
+	padding-bottom: 294px;
+}
+.mypage_main ul.my_wish_product li p.condition_label {
+	position: absolute;
+	z-index: 2;
+	top: 0px;
+	right: 0px;
+	width: 80px;
+	color: white;
+	text-align: center;
+	line-height: 22px;
+}
+.mypage_main ul.my_wish_product li p.condition_label.expected {
+	padding: 17px 0px 19px;
+	background-color: #1B9C9E;
+}
+.mypage_main ul.my_wish_product li p.condition_label.ing {
+	padding: 28px 0px 30px;
+	background-color: #5262AD;
+}
+.mypage_main ul.my_wish_product li .photo {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 345px;
+}
+.mypage_main ul.my_wish_product li .photo img {
+	width: 100%;
+	height: 100%;
+}
+.mypage_main ul.my_wish_product li .desc {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 2;
+	width: 345px;
+	min-height: 250px;
+	padding: 40px;
+	margin: -50px 0px 0px 25px;
+	background-color: white;
+	box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.mypage_main ul.my_wish_product li .desc p.notice {
+	position: absolute;
+	z-index: 2;
+	top: -55px;
+	left: 0px;
+	width: 376px;
+	padding: 11px 0px 12px;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+	border-radius: 3px;
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 22px;
+	color: white;
+	border-width: 0px 12px;
+	border-style: solid;
+	border-color: transparent;
+	background-color: rgba(16,16,16,0.6);
+}
+.mypage_main ul.my_wish_product li .desc p.schedule {
+	line-height: 20px;
+	font-size: 16px;
+}
+.mypage_main ul.my_wish_product li .desc p.schedule time {
+	font-family: 'HK Nova';
+}
+.mypage_main ul.my_wish_product li .desc p.schedule strong.condition {
+	font-weight: 500;
+	color: #1B9C9E;
+	margin-left: 3px;
+}
+.mypage_main ul.my_wish_product li .desc p.schedule strong.condition.ing {
+	color: #5262AD;
+}
+.mypage_main ul.my_wish_product li .desc p.name {
+	overflow: hidden;
+	max-height: 68px;
+	margin-top: 8px;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 34px;
+}
+.mypage_main ul.my_wish_product li .desc .btn_wish {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+	line-height: 1;
+}
+.mypage_main ul.my_wish_product li .desc .btn_wish button {
+	width: 25px;
+	height: 22px;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(../images/main/btn_mps_wish.png) no-repeat left top;
+}
+.mypage_main ul.my_wish_product li .desc .btn_wish button.on {
+	background-position: left bottom;
+}
+.mypage_main ul.my_wish_product li .desc .info {
+	overflow: hidden;
+	margin-top: 20px;
+	transition: height cubic-bezier(0.35, 0, 0.7, 1) 0.3s, padding-top cubic-bezier(0.35, 0, 0.7, 1) 0.3s;
+}
+.mypage_main ul.my_wish_product li .desc .info table {
+	width: 100%;
+	margin-bottom: 27px;
+}
+.mypage_main ul.my_wish_product li .desc .info table tbody tr th[scope="row"],
+.mypage_main ul.my_wish_product li .desc .info table tbody tr td {
+	line-height: 30px;
+}
+.mypage_main ul.my_wish_product li .desc .info table tbody tr th[scope="row"] {
+	width: 45px;
+	color: #101010;
+	font-weight: 500;
+}
+.mypage_main ul.my_wish_product li .desc .info table tbody tr td {
+	color: #5E5E5E;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a {
+	float: left;
+	width: 48.5%;
+	box-sizing: border-box;
+	padding: 12px 0px;
+	margin-left: 3%;
+	text-align: center;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: 500;
+	line-height: 24px;
+	border-radius: 100px;
+	background-color: white;
+	transition: 0.3s ease color,0.3s ease background-color;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a:first-child {
+	margin-left: 0%;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a:only-child {
+	width: 100%;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a.map {
+	color: #444444;
+	border-color: #444444;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a.more {
+	color: #1B9C9E;
+	border-color: #1B9C9E;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a.map:hover,
+.mypage_main ul.my_wish_product li .desc .btn_set a.map:focus {
+	color: white;
+	background-color: #444444;
+}
+.mypage_main ul.my_wish_product li .desc .btn_set a.more:hover,
+.mypage_main ul.my_wish_product li .desc .btn_set a.more:focus {
+	color: white;
+	background-color: #1B9C9E;
+}
+
+/* 1:1 문의내역 & A/S신청내역 */
+.mypage_main ul.qna_history + .paging {
+	margin-top: 50px;
+}
+.mypage_main ul.qna_history li {
+	margin-top: 40px;
+	padding: 0px 40px 40px 40px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.mypage_main ul.qna_history li:first-child {
+	margin-top: 0px;
+}
+.mypage_main ul.qna_history li a {
+	display: block;
+}
+.mypage_main ul.qna_history li a time {
+	font-family: 'HK Nova';
+}
+.mypage_main ul.qna_history li a .question {
+	position: relative;
+	padding-right: 320px;
+}
+.mypage_main ul.qna_history li a .question p.category {
+	color: #1B9C9E;
+	line-height: 24px;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+.mypage_main ul.qna_history li a .question p.subject {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 38px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mypage_main ul.qna_history li a .question p.subject b {
+	padding-bottom: 4px;
+}
+.mypage_main ul.qna_history li a:hover .question p.subject b,
+.mypage_main ul.qna_history li a:focus .question p.subject b {
+	border-bottom: 1px solid #101010;
+}
+.mypage_main ul.qna_history li a .question p.date {
+	position: absolute;
+	right: 40px;
+	bottom: 8px;
+	line-height: 20px;
+}
+.mypage_main ul.qna_history li a .answer {
+	position: relative;
+	margin-top: 20px;
+	padding: 20px 305px 20px 85px;
+	border-radius: 3px;
+	background: #F2F2F2 url(../images/mypage/ico_qna_a.png) no-repeat 40px 23px;
+}
+.mypage_main ul.qna_history li a .answer p.content {
+	font-size: 17px;
+	line-height: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mypage_main ul.qna_history li a .answer.waiting p.content {
+	color: #888888;
+}
+.mypage_main ul.qna_history li a .answer p.condition {
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	line-height: 25px;
+}
+.mypage_main ul.qna_history li a .answer p.condition strong {
+	font-size: 17px;
+}
+.mypage_main ul.qna_history li a .answer.waiting p.condition strong {
+	color: #5E5E5E;
+}
+.mypage_main ul.qna_history li a .answer.complete p.condition strong {
+	color: #1B9C9E;
+}
+.mypage_main ul.qna_history li a .answer.complete p.condition time {
+	position: relative;
+	top: -1px;
+	margin-left: 10px;
+	color: #888888;
+}
+
+/* 아카데미&클라스 신청내역 */
+.mypage_main ul.edu_history + .paging {
+	margin-top: 50px;
+}
+.mypage_main ul.edu_history > li {
+	padding-bottom: 40px;
+	margin-top: 40px;
+	border-bottom: 1px solid #C7C7C7;
+}
+.mypage_main ul.edu_history > li:first-child {
+	margin-top: 0px;
+}
+.mypage_main ul.edu_history > li a {
+	display: block;
+	padding-left: 40px;
+}
+.mypage_main ul.edu_history > li a .topic,
+.mypage_main ul.edu_history > li a .condition {
+	display: inline-block;
+	vertical-align: middle;
+}
+.mypage_main ul.edu_history > li a .topic {
+	width: 1070px;
+	max-height: 150px;
+}
+.mypage_main ul.edu_history > li a .topic p.subject {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 42px;
+}
+.mypage_main ul.edu_history > li a .topic p.subject b {
+	padding-bottom: 2px;
+}
+.mypage_main ul.edu_history > li a:hover .topic p.subject b,
+.mypage_main ul.edu_history > li a:focus .topic p.subject b {
+	border-bottom: 1px solid #101010;
+}
+.mypage_main ul.edu_history > li a .topic p.teacher {
+	position: relative;
+	top: 5px;
+	font-size: 17px;
+	line-height: 30px;
+	color: #444444;
+}
+.mypage_main ul.edu_history > li a .topic ul.info {
+	margin-top: 25px;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li {
+	position: relative;
+	line-height: 20px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li.date,
+.mypage_main ul.edu_history > li a .topic ul.info > li.period {
+	float: left;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li.period {
+	margin-left: 15px;
+	padding-left: 15px;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li.period:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0px;
+	width: 1px;
+	height: 16px;
+	background-color: #C7C7C7;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li.place {
+	clear: left;
+	padding-top: 14px;
+}
+.mypage_main ul.edu_history > li a .topic ul.info > li strong.category {
+	color: #1B9C9E;
+	margin-right: 10px;
+}
+.mypage_main ul.edu_history > li a .condition {
+	width: 244px;
+	height: 150px;
+	padding: 24px 0px;
+	margin-left: 41px;
+	text-align: center;
+	box-sizing: border-box;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+}
+.mypage_main ul.edu_history > li a .condition.ongoing {
+	color: #5E5E5E;
+	border-color: #1B9C9E;
+	background-color: white;
+}
+.mypage_main ul.edu_history > li a .condition.end {
+	color: #A8A8A8;
+	border-color: #F2F2F2;
+	background-color: #F2F2F2;
+}
+.mypage_main ul.edu_history > li a .condition.ongoing strong {
+	color: #1B9C9E;
+}
+.mypage_main ul.edu_history > li a .condition p.con_txt strong {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 37px;
+}
+.mypage_main ul.edu_history > li a .condition.end p.con_txt strong {
+	color: #888888;
+}
+.mypage_main ul.edu_history > li a .condition p.personnel {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 5px 0px 6px;
+}
+.mypage_main ul.edu_history > li a .condition p.personnel strong {
+	font-size: 20px;
+}
+.mypage_main ul.edu_history > li a .condition p.date {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/* 래미안 분양일정&뉴스 */
+.mypage_main .mypage_main_latest {
+	position: relative;
+	padding: 26px 0px 0px 296px;
+	border-top: 3px solid #101010;
+	min-height: 159px;
+	margin-top: 80px;
+}
+.mypage_main .mypage_main_latest h3 {
+	position: absolute;
+	top: 50px;
+	left: 0px;
+	font-size: 28px;
+	line-height: 41px;
+}
+.mypage_main .mypage_main_latest ul {
+	overflow: hidden;
+}
+.mypage_main .mypage_main_latest ul li {
+	float: left;
+	width: 48.5%;
+	margin-left: 3%;
+	padding: 26px 0px;
+	border-bottom: 1px solid #C7C7C7;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mypage_main .mypage_main_latest ul li:nth-child(2n-1) {
+	margin-left: 0px;
+}
+.mypage_main .mypage_main_latest ul li.empty {
+	width: 100%;
+	padding: 56px 0px 87px;
+	text-align: center;
+	color: #A8A8A8;
+	font-size: 18px;
+	line-height: 27px;
+}
+.mypage_main .mypage_main_latest ul.pre_sale_schedule li {
+	line-height: 38px;
+	height: 38px;
+}
+.mypage_main .mypage_main_latest ul.pre_sale_schedule li time {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'HK Nova';
+	margin-right: 30px;
+	letter-spacing: 0px;
+}
+.mypage_main .mypage_main_latest ul.pre_sale_schedule li time span.year {
+	color: #5E5E5E;
+	font-size: 16px;
+}
+.mypage_main .mypage_main_latest ul.pre_sale_schedule li time strong.month {
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 30px;
+	color: #1B9C9E;
+	margin-left: 5px;
+}
+.mypage_main .mypage_main_latest ul.pre_sale_schedule li a {
+	vertical-align: middle;
+	font-weight: 500;
+	font-size: 22px;
+	position: relative;
+	top: -1px;
+}
+.mypage_main .mypage_main_latest ul.news li strong.category {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	line-height: 24px;
+	color: #907E72;
+}
+.mypage_main .mypage_main_latest ul.news li a.subject {
+	display: block;
+	font-size: 18px;
+	line-height: 27px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.mypage_main .mypage_main_latest a.btn_more {
+	position: absolute;
+	top: 108px;
+	left: 0px;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	padding-right: 16px;
+	background: url(../images/template/bullet_more.png) no-repeat right 7px;
+}
+
+/* 입주단지등록 */
+.layer_popup .lp_content .regist_resident_member {
+	margin-bottom: 40px;
+	padding: 40px;
+	border: 5px solid #ECECEC;
+}
+.layer_popup .lp_content .regist_resident_member h4 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+.layer_popup .lp_content .regist_resident_member strong {
+	font-size: 20px;
+	line-height: 30px;
+	color: #1B9C9E;
+}
+.layer_popup .lp_content .regist_resident_member p {
+	color: #444444;
+	line-height: 24px;
+}
+
+/* 계약단지등록 팝업 - 계약정보 입력 */
+.layer_popup .lp_content p.contract_selected_info {
+	line-height: 20px;
+	margin-top: 12px;
+}
+.layer_popup .lp_content p.contract_selected_info strong {
+	color: #5262AD;
+}
+
+/* 단지 동/호수 선택 팝업 - 동&호수 선택 */
+.layer_popup .lp_content .apt_hosu_result table.hosu_list {
+	border-top: 2px solid #1B9C9E;
+	margin-top: 40px;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list thead tr th[scope="col"] {
+	padding: 20px;
+	line-height: 24px;
+	background-color: #F1F4F4;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td {
+	padding: 18px 0px;
+	width: 20%;
+	line-height: 24px;
+	text-align: center;
+	border-width: 0px 1px 1px;
+	border-style: solid;
+	border-color: #C7C7C7;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td:first-child {
+	border-left-width: 0px;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td:last-child {
+	border-right-width: 0px;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td.empty {
+	height: 120px;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td label {
+	position: relative;
+	display: inline-block;
+	padding: 0px 30px;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td label input[type="radio"] {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+.layer_popup .lp_content .apt_hosu_result table.hosu_list tbody tr td label.active {
+	color: #1B9C9E;
+	background: url(../images/template/bullet_ckbox01.png) no-repeat left 4px;
+}
+
+/* 단지 동/호수 선택 팝업 - 동&호수 선택 결과 */
+.layer_popup .lp_content .apt_hosu_result p.dong_hosu_view {
+	padding: 30px 0px;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 3px;
+	background-color: #F1F4F4;
+}
+.layer_popup .lp_content .apt_hosu_result p.dong_hosu_view span.result {
+	display: inline-block;
+	padding: 0px 10px;
+	vertical-align: middle;
+}
+.layer_popup .lp_content .apt_hosu_result p.dong_hosu_view span.result b {
+	font-weight: 300;
+}
+.layer_popup .lp_content .apt_hosu_result p.dong_hosu_view strong.value {
+	position: relative;
+	top: 1px;
+	font-size: 20px;
+	color: #1B9C9E;
+}
+
+/* 마이래미안 계약 정보 수정
+**************************************************************/
+.mypage_member .basicL td.email_regist_guide {
+	font-size: 16px;
+	line-height: 28px;
+}
+.mypage_member .basicL td.email_regist_guide a {
+	display: inline-block;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 4px;
+}
+.mypage_member .basicL td.email_regist_guide a:hover,
+.mypage_member .basicL td.email_regist_guide a:focus {
+	border-bottom: 1px solid #101010;
+}
+
+/* 마이래미안 회원 정보 수정
+**************************************************************/
+.mypage_member {
+	box-sizing: border-box;
+	padding: 80px 120px;
+}
+.mypage_member > h3 {
+	position: relative;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 41px;
+	color: #101010;
+	margin: 80px 0px 20px;
+}
+.mypage_member > h3:first-child {
+	margin-top: 0px;
+}
+.mypage_member > h3 span.require_guide {
+	position: absolute;
+	top: 10px;
+	right: 0px;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: normal;
+}
+.mypage_member > h3 span.require_guide img.ico {
+	position: relative;
+	top: -2px;
+	margin-right: 6px;
+}
+
+/* 개인정보 수정 시 유의사항 안내 */
+.mypage_member .warning_list.personal_info_modify {
+	position: relative;
+	padding: 60px 380px 60px 45px;
+}
+.mypage_member .warning_list.personal_info_modify .btn_info_edit {
+	position: absolute;
+	top: 53px;
+	right: 68px;
+	width: 200px;
+}
+.mypage_member .warning_list.personal_info_modify .btn_info_edit a {
+	position: relative;
+	display: block;
+	padding: 12px 45px 12px 25px;
+	border-radius: 100px;
+	color: white;
+	background-color: #717173;
+}
+.mypage_member .warning_list.personal_info_modify .btn_info_edit a.modify {
+	margin-top: 10px;
+	background-color: #1EBEC0;
+}
+.mypage_member .warning_list.personal_info_modify .btn_info_edit a:after {
+	content: '';
+	display: block;
+	width: 8px;
+	height: 12px;
+	position: absolute;
+	top: 19px;
+	right: 18px;
+	background: url(../images/mypage/ico_info.png) no-repeat left top;
+}
+
+/* 비밀번호 확인 */
+.mypage_member .password_check {
+	padding-top: 79px;
+	text-align: center;
+	border-top: 4px solid #101010; position: relative;
+}
+
+.mypage_member .password_check .inner { 
+    display: inline-block;
+    margin-bottom: 10px; height:137px}
+.mypage_member .password_check .no_pw {
+    width: 482px;
+    margin: -14px auto 0;     text-align: left;}
+.mypage_member .password_check h4 {
+	padding-top: 220px;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 41px;
+	background: url(../images/mypage/ico_pw_check.png) no-repeat center top;
+}
+.mypage_member .password_check p.guide {
+	font-size: 18px;
+	line-height: 30px;
+}
+.mypage_member .password_check p.field,
+.mypage_member .password_check p.last_update {
+	width: 512px;
+	text-align: left;
+}
+.mypage_member .password_check p.field {
+	margin: 50px auto 15px;
+}
+.mypage_member .password_check p.field input {
+	width: 100%;
+}
+.mypage_member .password_check p.last_update {
+	margin: 0 auto;
+	color: #5E5E5E;
+	font-size: 14px;
+	line-height: 21px;
+}
+.mypage_member .password_check p.last_update time {
+	color: #1B9C9E;
+	font-family: 'HK Nova';
+}
+
+
+/* 해상도 1440 이하 일 때 */
+@media all and (max-width: 1440px) {
+	#mypage_contents,#mypage_times {
+		width: 1200px;
+	}
+
+	/* 마이래미안 래미안타임즈 */
+	#mypage_times ul.times_list {
+		margin: -50px -53px 0px;
+		padding: 50px 53px 60px 20px;
+	}
+	#mypage_times ul.times_list li {
+		width: 275px;
+		margin-left: 33px;
+	}
+	#mypage_times ul.times_list li a {
+		padding: 30px 0px 34px;
+		box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.15);
+	}
+	#mypage_times ul.times_list li a p.category,
+	#mypage_times ul.times_list li a p.subject {
+		font-weight: 500;
+		text-align: center;
+	}
+	#mypage_times ul.times_list li a p.category {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	#mypage_times ul.times_list li a p.subject {
+		margin: 10px 25px 20px;
+		font-size: 26px;
+		line-height: 38px;
+	}
+	#mypage_times ul.times_list li a[data-type="thumbnail"] p.cont {
+		padding-left: 25px;
+	}
+	#mypage_times ul.times_list li a[data-type="thumbnail"] p.cont img {
+		width: 250px;
+	}
+	#mypage_times ul.times_list li a[data-type="text"] p.cont {
+		padding: 0px 25px;
+	}
+	#mypage_times ul.times_list li a p.date {
+		margin-top: 25px;
+	}
+	#mypage_times ul.times_list li a[data-type="thumbnail"] p.date,
+	#mypage_times ul.times_list li a[data-type="text"] p.date {
+		padding-left: 25px;
+	}
+	
+	/* 마이래미안 메인
+	**************************************************************/
+	/* 계약회원&입주회원 상품 정보 */
+	.mypage_main .contract_resident_info {
+		padding: 50px 40px;
+	}
+	.mypage_main .contract_resident_info ul.product_list {
+		left: 40px;
+		width: 953px;
+	}
+	.mypage_main .contract_resident_info .product_detail .gallery {
+		width: 388px;
+	}
+	.mypage_main .contract_resident_info .product_detail .gallery .photo {
+		width: 388px;
+		height: auto;
+	}
+	.mypage_main .contract_resident_info .product_detail .content {
+		float: left;
+		width: 682px;
+		margin-left: 50px;
+	}
+	.mypage_main .contract_resident_info .product_detail .content .as_ask_way h4 {
+		width: 136px;
+	}
+	.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul {
+		width: 530px;
+	}
+	.mypage_main .contract_resident_info .product_detail .content .as_ask_way ul li {
+		padding: 0px 24px 0px 31px;
+	}
+
+	/* 고객센터 */
+	.mypage_main ul.mypage_contact_us {
+		margin: 60px 0px 80px;
+		overflow: hidden;
+	}
+	.mypage_main ul.mypage_contact_us li {
+		float: left;
+		width: 50%;
+		height: 260px;
+		padding: 65px 0px 0px 198px;
+		box-sizing: border-box;
+	}
+	.mypage_main ul.mypage_contact_us li.cs_center {
+		color: white;
+		background: #1B9C9E url(../images/cscenter/ico_common_cscenter.png) no-repeat 75px 99px;
+	}
+	.mypage_main ul.mypage_contact_us li.inquiry {
+		background: #ECECEC url(../images/cscenter/ico_common_inquiry.png) no-repeat 77px 97px;
+	}
+
+	/* 나의관심단지 */
+	.mypage_main ul.my_wish_product li {
+		width: 380px;
+		margin: 60px 0px 0px 30px;
+	}
+	.mypage_main ul.my_wish_product li .desc {
+		width: 280px;
+	}
+	.mypage_main ul.my_wish_product li .photo {
+		height: 290px;
+	}
+	.mypage_main ul.my_wish_product li .desc p.notice {
+		width: 316px;
+	}
+
+	/* 아카데미&클라스 신청내역 */
+	.mypage_main ul.edu_history > li a .topic {
+		width: 830px;
+	}
+
+	/* 마이래미안 회원 정보 수정
+	**************************************************************/
+	.mypage_member {
+		padding: 80px 60px;
+	}
+
+}
